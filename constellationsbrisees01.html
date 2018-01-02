@@ -15,14 +15,27 @@
     <link rel="stylesheet" href="//editor.silex.me/static/2.7/front-end.css" data-silex-static="">
 
     <style type="text/css" class="silex-style">
-        a:link {
+        .title,
+        .heading1,
+        .heading2,
+        .normal {
+            color: #ffffff;
+            font-family: Cantata, arial;
+            margin: 0;
+        }
+        
+        .heading3 {
+            color: #451a50;
+        }
+        
+        .normal a:link {
             color: #b296bd;
             text-decoration: none;
             background-color: transparent
         }
         
         a:visited {
-            color: #ffffff;
+            color: #71377f;
             text-decoration: none;
             background-color: transparent
         }
@@ -31,6 +44,26 @@
             color: #71377f;
             text-decoration: none;
             background-color: transparent
+        }
+        /* NAVIGATION */
+        
+        .nav a {
+            color: black;
+            padding: 5px 10px;
+            line-height: 25px;
+            color: black;
+            font-size: 15px;
+        }
+        
+        .nav .normal .page-link-active {
+            background-color: #CDBA98;
+            transition: background-color .5s linear;
+            -moz-transition: background-color .5s linear;
+            /* FF3.7+ */
+            -o-transition: background-color .5s linear;
+            /* Opera 10.5 */
+            -webkit-transition: background-color .5s linear;
+            /* Saf3.2+, Chrome */
         }
     </style>
     <script type="text/javascript" class="silex-script"></script>
@@ -59,13 +92,6 @@
             min-height: 60px;
             top: 0px;
             left: 0px;
-        }
-        
-        .silex-id-1514460793313-4 {
-            width: 495px;
-            min-height: 76px;
-            top: 49px;
-            left: 8px;
         }
         
         .silex-id-1514462318157-9 {
@@ -108,6 +134,13 @@
             min-height: 20px;
             top: 133px;
             left: 962px;
+        }
+        
+        .silex-id-1514460793313-4 {
+            width: 495px;
+            min-height: 76px;
+            top: 66px;
+            left: 10px;
         }
         
         .silex-id-1478366450713-3 {
@@ -242,7 +275,7 @@
     </style>
     <title></title>
     <script type="text/javascript" class="silex-json-styles">
-        [{"desktop":{"body-initial":{"background-color":"rgba(113,52,129,1)"},"silex-id-1474394621032-2":{"min-height":"64px","background-color":"transparent","width":"1200px","top":"15px","left":"204px"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1442914737143-3":{"min-height":"25px","width":"508px","top":"26px","left":"9px"},"silex-id-1478366444112-0":{"min-height":"161px","background-color":"transparent","width":"1200px","top":"15px","left":"204px"},"silex-id-1478366444112-1":{"top":"5px","left":"5px","background-color":"transparent","min-width":"1200px"},"silex-id-1478366450713-2":{"min-height":"800px","background-color":"transparent","width":"1200px","top":"15px","left":"204px"},"silex-id-1478366450713-3":{"top":"274px","left":"5px","background-color":"transparent","min-width":"1200px"},"silex-id-1514460718966-1":{"width":"1200px","background-color":"","min-height":"500px","top":"15px","left":"204px"},"silex-id-1514460718967-2":{"min-width":"1200px"},"silex-id-1514460770879-3":{"width":"511px","min-height":"60px","top":"0px","left":"0px"},"silex-id-1514460793313-4":{"width":"495px","min-height":"76px","top":"49px","left":"8px"},"silex-id-1514462141280-5":{"width":"57px","min-height":"20px","top":"135px","left":"635px"},"silex-id-1514462161804-6":{"width":"154px","min-height":"20px","top":"134px","left":"700px"},"silex-id-1514462242225-7":{"width":"95px","min-height":"20px","top":"133px","left":"858px"},"silex-id-1514462264448-8":{"width":"30px","min-height":"30px","top":"115px","left":"1075px"},"silex-id-1514462318157-9":{"width":"30px","min-height":"30px","top":"115px","left":"1139px"},"silex-id-1514917300601-1":{"width":"751px","background-color":"rgb(255, 255, 255)","min-height":"600px","top":"80px","left":"5px"},"silex-id-1514917636733-2":{"width":"433px","min-height":"638px","top":"65px","left":"760px"},"silex-id-1514917916769-3":{"width":"233px","min-height":"79px","top":"0px","left":"20px"},"silex-id-1514918005705-4":{"width":"1115px","min-height":"100px","top":"700px","left":"0px"},"silex-id-1514918474296-7":{"width":"1200px","background-color":"","min-height":"74px","top":"15px","left":"204px"},"silex-id-1514918474297-8":{"min-width":"1200px"},"silex-id-1514918538454-9":{"width":"900px","min-height":"460px","top":"20px","left":"150px"},"silex-id-1514918644210-10":{"width":"198px","min-height":"26px","top":"172px","left":"370px"},"silex-id-1514918669172-11":{"width":"213px","min-height":"79px","top":"0px","left":"20px"},"silex-id-1514918695533-12":{"width":"507px","min-height":"79px","top":"0px","left":"20px"},"silex-id-1514918829738-13":{"width":"300px","min-height":"168px","top":"100px","left":"40px"},"silex-id-1514919016814-14":{"width":"95px","min-height":"20px","top":"133px","left":"962px"},"silex-id-1514919105948-15":{"width":"905px","background-color":"rgb(255, 255, 255)","min-height":"603px","top":"80px","left":"146px"},"silex-id-1514919273824-16":{"width":"1071px","min-height":"100px","top":"700px","left":"83px"},"silex-id-1514919776625-17":{"width":"188px","min-height":"79px","top":"0px","left":"20px"}},"mobile":{},"componentData":{}}]
+        [{"desktop":{"body-initial":{"background-color":"rgba(113,52,129,1)"},"silex-id-1474394621032-2":{"min-height":"64px","background-color":"transparent","width":"1200px","top":"15px","left":"204px"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1442914737143-3":{"min-height":"25px","width":"508px","top":"26px","left":"9px"},"silex-id-1478366444112-0":{"min-height":"161px","background-color":"transparent","width":"1200px","top":"15px","left":"204px"},"silex-id-1478366444112-1":{"top":"5px","left":"5px","background-color":"transparent","min-width":"1200px"},"silex-id-1478366450713-2":{"min-height":"800px","background-color":"transparent","width":"1200px","top":"15px","left":"204px"},"silex-id-1478366450713-3":{"top":"274px","left":"5px","background-color":"transparent","min-width":"1200px"},"silex-id-1514460718966-1":{"width":"1200px","background-color":"","min-height":"500px","top":"15px","left":"204px"},"silex-id-1514460718967-2":{"min-width":"1200px"},"silex-id-1514460770879-3":{"width":"511px","min-height":"60px","top":"0px","left":"0px"},"silex-id-1514460793313-4":{"width":"495px","min-height":"76px","top":"66px","left":"10px"},"silex-id-1514462141280-5":{"width":"57px","min-height":"20px","top":"135px","left":"635px"},"silex-id-1514462161804-6":{"width":"154px","min-height":"20px","top":"134px","left":"700px"},"silex-id-1514462242225-7":{"width":"95px","min-height":"20px","top":"133px","left":"858px"},"silex-id-1514462264448-8":{"width":"30px","min-height":"30px","top":"115px","left":"1075px"},"silex-id-1514462318157-9":{"width":"30px","min-height":"30px","top":"115px","left":"1139px"},"silex-id-1514917300601-1":{"width":"751px","background-color":"rgb(255, 255, 255)","min-height":"600px","top":"80px","left":"5px"},"silex-id-1514917636733-2":{"width":"433px","min-height":"638px","top":"65px","left":"760px"},"silex-id-1514917916769-3":{"width":"233px","min-height":"79px","top":"0px","left":"20px"},"silex-id-1514918005705-4":{"width":"1115px","min-height":"100px","top":"700px","left":"0px"},"silex-id-1514918474296-7":{"width":"1200px","background-color":"","min-height":"74px","top":"15px","left":"204px"},"silex-id-1514918474297-8":{"min-width":"1200px"},"silex-id-1514918538454-9":{"width":"900px","min-height":"460px","top":"20px","left":"150px"},"silex-id-1514918644210-10":{"width":"198px","min-height":"26px","top":"172px","left":"370px"},"silex-id-1514918669172-11":{"width":"213px","min-height":"79px","top":"0px","left":"20px"},"silex-id-1514918695533-12":{"width":"507px","min-height":"79px","top":"0px","left":"20px"},"silex-id-1514918829738-13":{"width":"300px","min-height":"168px","top":"100px","left":"40px"},"silex-id-1514919016814-14":{"width":"95px","min-height":"20px","top":"133px","left":"962px"},"silex-id-1514919105948-15":{"width":"905px","background-color":"rgb(255, 255, 255)","min-height":"603px","top":"80px","left":"146px"},"silex-id-1514919273824-16":{"width":"1071px","min-height":"100px","top":"700px","left":"83px"},"silex-id-1514919776625-17":{"width":"188px","min-height":"79px","top":"0px","left":"20px"}},"mobile":{},"componentData":{}}]
     </script>
 
 
@@ -301,22 +334,6 @@
         <div data-silex-type="container" class="editable-style silex-element-content silex-id-1478366444112-0 silex-container-content container-element prevent-draggable website-width" data-silex-id="silex-id-1478366444112-0">
             <div data-silex-type="image" class="editable-style silex-id-1514460770879-3 image-element" data-silex-id="silex-id-1514460770879-3" style=""><img src="header.png" class="silex-element-content"></div>
 
-            <div data-silex-type="text" class="editable-style silex-id-1514460793313-4 text-element" data-silex-id="silex-id-1514460793313-4" style="">
-                <div class="silex-element-content normal">
-                    <p class="normal">
-                        <font size="4"><span style="color: rgb(255, 255, 255);"><span style="color: rgb(142, 124, 195);"><span style="font-weight: normal;"><span style="font-family: georgia, serif;" class="heading1">Les parcours de résistance et de déportation de femmes qui ont aimé des femmes</span></span>
-                            </span>
-                            </span>
-                        </font>
-                    </p>
-
-
-
-
-
-
-                </div>
-            </div>
             <div data-silex-type="image" class="editable-style silex-id-1514462318157-9 image-element" data-silex-id="silex-id-1514462318157-9" style="" data-silex-href="https://twitter.com/QueerCodeQR"><img src="twitter_queercode.png" class="silex-element-content"></div>
             <div data-silex-type="image" class="editable-style silex-id-1514462264448-8 image-element" data-silex-id="silex-id-1514462264448-8" style="" data-silex-href="https://www.facebook.com/QueeR-code-1646503238931149/timeline/"><img src="fb_queercode.png" class="silex-element-content"></div>
             <div data-silex-type="text" class="editable-style silex-id-1514462141280-5 text-element" data-silex-id="silex-id-1514462141280-5" style="" data-silex-href="#!page-accueil">
@@ -330,6 +347,23 @@
             </div>
             <div data-silex-type="text" class="editable-style text-element silex-id-1514919016814-14" data-silex-id="silex-id-1514919016814-14" style="" data-silex-href="#!page-ressources">
                 <div class="silex-element-content normal"><span style="color: rgb(255, 255, 255);">Ressources<br></span></div>
+            </div>
+            <div data-silex-type="text" class="editable-style silex-id-1514460793313-4 text-element" data-silex-id="silex-id-1514460793313-4" style="">
+                <div class="silex-element-content normal">
+                    <h3 class="normal">
+                        <font size="4"><span style="color: rgb(255, 255, 255);"><span style="font-family: Cantata;"><span style="color: rgb(142, 124, 195);"><span style="font-weight: normal;"><span class="heading3">Les parcours de résistance et de déportation de femmes qui ont aimé des femmes</span></span>
+                            </span>
+                            </span>
+                            </span>
+                        </font>
+                    </h3>
+
+
+
+
+
+
+                </div>
             </div>
         </div>
     </div>
