@@ -20,7 +20,7 @@
         .heading2,
         .normal {
             color: #ffffff;
-            font-family: georgian, arial;
+            font-family: Georgia, arial;
             margin: 0;
         }
         
@@ -41,6 +41,15 @@
             background-color: transparent
         }
         /*nav*/
+        
+        .nav-element.page-link-active {
+            color: #451a50;
+        }
+        
+        .nav-element.page-link-active:hover {
+            color: #fefffd;
+            text-decoration: none;
+        }
     </style>
     <script type="text/javascript" class="silex-script"></script>
     <style class="silex-inline-styles" type="text/css">
@@ -328,7 +337,7 @@
 
 
     <style id="current-page-style">
-        .page-ressources {
+        .page-accueil {
             display: inherit;
         }
     </style>
@@ -343,9 +352,8 @@
                 class="silex-element-content">
         </div>
 
-        <a id="page-accueil" data-silex-type="page" class="page-element">Accueil</a><a id="page-cartographie_constellations" data-silex-type="page" class="page-element">cartographie_Constellations</a><a id="page-parcours" data-silex-type="page" class="page-element">parcours</a>
-        <a
-            id="page-therese_pierre" data-silex-type="page" class="page-element">therese_pierre</a><a id="page-ressources" data-silex-type="page" class="page-element page-link-active">ressources</a></div>
+        <a id="page-accueil" data-silex-type="page" class="page-element page-link-active">Accueil</a><a id="page-cartographie_constellations" data-silex-type="page" class="page-element">cartographie_Constellations</a><a id="page-parcours" data-silex-type="page"
+            class="page-element">parcours</a><a id="page-therese_pierre" data-silex-type="page" class="page-element">therese_pierre</a><a id="page-ressources" data-silex-type="page" class="page-element">ressources</a></div>
 
 
 
@@ -387,23 +395,38 @@
             <div data-silex-type="container" class="editable-style silex-id-1515080148844-10 container-element nav" data-silex-id="silex-id-1515080148844-10" style="">
                 <div data-silex-type="image" class="editable-style silex-id-1514462318157-9 image-element" data-silex-id="silex-id-1514462318157-9" style="" data-silex-href="https://twitter.com/QueerCodeQR"><img src="twitter_queercode.png" class="silex-element-content"></div>
                 <div data-silex-type="image" class="editable-style silex-id-1514462264448-8 image-element" data-silex-id="silex-id-1514462264448-8" style="" data-silex-href="https://www.facebook.com/QueeR-code-1646503238931149/timeline/"><img src="fb_queercode.png" class="silex-element-content"></div>
-                <div data-silex-type="text" class="editable-style text-element silex-id-1514462242225-7" data-silex-id="silex-id-1514462242225-7" style="" data-silex-href="#!page-parcours">
-                    <div class="silex-element-content normal"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">Les parcours<br></span></font>
-                        </span>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1514462242225-7 nav-element" data-silex-id="silex-id-1514462242225-7" style="" data-silex-href="#!page-parcours">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: center;">
+                            <div style="text-align: center;"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">Les parcours</span></font>
+                                </span><br></div><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);"></span></font>
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div data-silex-type="text" class="editable-style text-element silex-id-1514919016814-14 page-link-active" data-silex-id="silex-id-1514919016814-14" style="" data-silex-href="#!page-ressources">
-                    <div class="silex-element-content normal"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">Ressources<br></span></font>
-                        </span>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1514919016814-14 nav-element" data-silex-id="silex-id-1514919016814-14" style="" data-silex-href="#!page-ressources">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: center;">
+                            <div style="text-align: center;"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">Ressources</span></font>
+                                </span><br></div><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);"></span></font>
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div data-silex-type="text" class="editable-style silex-id-1514462141280-5 text-element" data-silex-id="silex-id-1514462141280-5" style="" data-silex-href="#!page-accueil">
-                    <div class="silex-element-content normal"><span style="font-family: georgia, serif;"><span style="color: rgb(255, 255, 255);"><font size="3">Accueil</font><br></span></span>
+                <div data-silex-type="text" class="editable-style silex-id-1514462141280-5 text-element nav-element page-link-active" data-silex-id="silex-id-1514462141280-5" style="" data-silex-href="#!page-accueil">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: center;">
+                            <div style="text-align: center;"><span style="font-family: georgia, serif;"><span style="color: rgb(255, 255, 255);"><font size="3">Accueil</font></span></span><br></div><span style="font-family: georgia, serif;"><span style="color: rgb(255, 255, 255);"></span></span>
+                        </div>
                     </div>
                 </div>
-                <div data-silex-type="text" class="editable-style text-element silex-id-1514462161804-6" data-silex-id="silex-id-1514462161804-6" style="" data-silex-href="#!page-cartographie_constellations">
-                    <div class="silex-element-content normal"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">Grande Constellation<br></span></font>
-                        </span>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1514462161804-6 nav-element" data-silex-id="silex-id-1514462161804-6" style="" data-silex-href="#!page-cartographie_constellations">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: center;">
+                            <div style="text-align: center;"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">Grande Constellation</span></font>
+                                </span><br></div><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);"></span></font>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
