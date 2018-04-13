@@ -1,1091 +1,27 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<!DOCTYPE html><html><head>
     <meta charset="UTF-8">
     <!-- generator meta tag -->
     <!-- leave this for stats and Silex version check -->
     <meta name="generator" content="Silex v2.2.7">
     <!-- End of generator meta tag -->
-    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.7/jquery.js" data-silex-static=""></script><style></style>
     <style></style>
     <style></style>
     <style></style>
-    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery-ui.js" data-silex-static=""></script>
-    <script type="text/javascript" src="//editor.silex.me/static/2.7/pageable.js" data-silex-static=""></script>
-    <script type="text/javascript" src="//editor.silex.me/static/2.7/front-end.js" data-silex-static=""></script>
-    <link rel="stylesheet" href="//editor.silex.me/static/2.7/normalize.css" data-silex-static="">
-    <link rel="stylesheet" href="//editor.silex.me/static/2.7/front-end.css" data-silex-static="">
+    <script type="text/javascript" src="https://editor.silex.me/static/2.7/jquery-ui.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.7/pageable.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.7/front-end.js" data-silex-static=""></script>
+    <link rel="stylesheet" href="https://editor.silex.me/static/2.7/normalize.css" data-silex-static="">
+    <link rel="stylesheet" href="https://editor.silex.me/static/2.7/front-end.css" data-silex-static="">
 
-    <style type="text/css" class="silex-style">
-        .title,
-        .heading1,
-        .heading2,
-        .normal {
-            color: #ffffff;
-            font-family: Georgia, arial;
-            margin: 0;
-        }
-        
-        .heading3 {
-            color: #451a50;
-        }
-        /* body*/
-        
-        div.container-element a:link {
-            color: #451a50;
-            text-decoration: none;
-            background-color: transparent
-        }
-        
-        div.container-element a:hover {
-            color: #b296bd;
-            text-decoration: none;
-            background-color: transparent
-        }
-        
-        .image-element parcours-img:hover {
-            opacity: 0.7;
-            filter: alpha(opacity=30);
-        }
-        /*nav*/
-        
-        .nav-element.page-link-active {
-            background-color: #451a50;
-            border-radius: 4px;
-            transition: background-color .33s linear;
-            -moz-transition: background-color .3s linear;
-            /* FF3.7+ */
-            -o-transition: background-color .3s linear;
-            /* Opera 10.5 */
-            -webkit-transition: background-color .3s linear;
-            /* Saf3.2+, Chrome */
-        }
-    </style>
+    <style type="text/css" class="silex-style">.title,
+.heading1,
+.heading2,
+.normal {color: #ffffff; font-family: Georgia, arial; margin: 0;}.heading3 {color: #451a50;}div.container-element a:link {color: #451a50; text-decoration: none; background-color: transparent;}div.container-element a:hover {color: #b296bd; text-decoration: none; background-color: transparent;}.image-element parcours-img:hover {opacity: 0.7; filter: alpha(opacity=30);}.nav-element.page-link-active {background-color: #451a50; border-radius: 4px; transition: background-color .33s linear; -moz-transition: background-color .3s linear; -o-transition: background-color .3s linear; -webkit-transition: background-color .3s linear;}</style>
     <script type="text/javascript" class="silex-script"></script>
-    <style class="silex-inline-styles" type="text/css">
-        .body-initial {
-            background-color: rgba(113, 52, 129, 1);
-            background-image: url('q_07.png');
-            background-attachment: fixed;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
-        
-        .silex-id-1478366444112-1 {
-            top: 5px;
-            left: 5px;
-            background-color: transparent;
-            min-width: 1200px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1478366444112-1 {
-                top: 60px;
-                left: 0px;
-            }
-        }
-        
-        .silex-id-1478366444112-0 {
-            min-height: 160px;
-            background-color: transparent;
-            width: 1200px;
-            top: 15px;
-            left: 204px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1478366444112-0 {
-                top: 0px;
-                left: 12px;
-                width: 446px;
-                min-height: 132px;
-            }
-        }
-        
-        .silex-id-1515080148844-10 {
-            width: 628px;
-            background-color: transparent;
-            min-height: 35px;
-            top: 124px;
-            left: 570px;
-        }
-        
-        .silex-id-1514462318157-9 {
-            width: 30px;
-            min-height: 30px;
-            top: 2px;
-            left: 588px;
-        }
-        
-        .silex-id-1514462264448-8 {
-            width: 30px;
-            min-height: 30px;
-            top: 2px;
-            left: 543px;
-        }
-        
-        .silex-id-1514462141280-5 {
-            width: 80px;
-            min-height: 20px;
-            top: 7px;
-            left: 20px;
-            border-radius: 0px 0px 0px 0px;
-        }
-        
-        .silex-id-1514462161804-6 {
-            width: 190px;
-            min-height: 20px;
-            top: 7px;
-            left: 106px;
-            background-color: transparent;
-        }
-        
-        .silex-id-1514462242225-7 {
-            width: 120px;
-            min-height: 20px;
-            top: 7px;
-            left: 302px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1514462242225-7 {
-                left: 286px;
-                top: 1314px;
-            }
-        }
-        
-        .silex-id-1514919016814-14 {
-            width: 105px;
-            min-height: 20px;
-            top: 7px;
-            left: 428px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1514919016814-14 {
-                left: 353px;
-                top: 1145px;
-            }
-        }
-        
-        .silex-id-1518179420804-0 {
-            width: 495px;
-            min-height: 46px;
-            top: 75px;
-            left: 10px;
-        }
-        
-        .silex-id-1518179636440-1 {
-            width: 628px;
-            background-color: transparent;
-            min-height: 35px;
-            top: 124px;
-            left: 570px;
-        }
-        
-        .silex-id-1518179636441-2 {
-            width: 30px;
-            min-height: 30px;
-            top: 2px;
-            left: 588px;
-        }
-        
-        .silex-id-1518179636442-3 {
-            width: 30px;
-            min-height: 30px;
-            top: 2px;
-            left: 543px;
-        }
-        
-        .silex-id-1518179636443-6 {
-            width: 80px;
-            min-height: 20px;
-            top: 7px;
-            left: 20px;
-            border-radius: 0px 0px 0px 0px;
-        }
-        
-        .silex-id-1518179636444-7 {
-            width: 190px;
-            min-height: 20px;
-            top: 7px;
-            left: 106px;
-            background-color: transparent;
-        }
-        
-        .silex-id-1518179636443-4 {
-            width: 120px;
-            min-height: 20px;
-            top: 7px;
-            left: 303px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1518179636443-4 {
-                left: 264px;
-                top: 1077px;
-            }
-        }
-        
-        .silex-id-1518179636443-5 {
-            width: 105px;
-            min-height: 20px;
-            top: 7px;
-            left: 428px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1518179636443-5 {
-                left: 353px;
-                top: 1077px;
-            }
-        }
-        
-        .silex-id-1514460770879-3 {
-            width: 511px;
-            min-height: 60px;
-            top: 10px;
-            left: 0px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1514460770879-3 {
-                left: 23px;
-                top: 2463px;
-            }
-        }
-        
-        .silex-id-1514460793313-4 {
-            width: 495px;
-            min-height: 46px;
-            top: 75px;
-            left: 10px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1514460793313-4 {
-                left: 23px;
-                top: 2463px;
-            }
-        }
-        
-        .silex-id-1518188806706-24 {
-            width: 107px;
-            background-color: transparent;
-            min-height: 57px;
-            top: 10px;
-            left: 1200px;
-        }
-        
-        .silex-id-1518188624516-22 {
-            width: 105px;
-            min-height: 22px;
-            top: 5px;
-            left: 0px;
-        }
-        
-        .silex-id-1518188659662-23 {
-            width: 105px;
-            min-height: 23px;
-            top: 30px;
-            left: 0px;
-        }
-        
-        .silex-id-1518188937243-25 {
-            width: 107px;
-            background-color: transparent;
-            min-height: 57px;
-            top: 10px;
-            left: 1200px;
-        }
-        
-        .silex-id-1518188937244-26 {
-            width: 105px;
-            min-height: 22px;
-            top: 5px;
-            left: 0px;
-        }
-        
-        .silex-id-1518188937245-27 {
-            width: 105px;
-            min-height: 23px;
-            top: 30px;
-            left: 0px;
-        }
-        
-        .silex-id-1518188979070-32 {
-            width: 105px;
-            min-height: 22px;
-            top: 5px;
-            left: 0px;
-        }
-        
-        .silex-id-1518188969117-31 {
-            width: 105px;
-            min-height: 23px;
-            top: 30px;
-            left: 0px;
-        }
-        
-        .silex-id-1518189062118-33 {
-            width: 107px;
-            background-color: transparent;
-            min-height: 57px;
-            top: 10px;
-            left: 1200px;
-        }
-        
-        .silex-id-1518189062118-34 {
-            width: 105px;
-            min-height: 22px;
-            top: 5px;
-            left: 0px;
-        }
-        
-        .silex-id-1518189062120-35 {
-            width: 105px;
-            min-height: 23px;
-            top: 30px;
-            left: 0px;
-        }
-        
-        .silex-id-1518189062121-36 {
-            width: 105px;
-            min-height: 22px;
-            top: 5px;
-            left: 0px;
-        }
-        
-        .silex-id-1518189062121-37 {
-            width: 105px;
-            min-height: 23px;
-            top: 30px;
-            left: 0px;
-        }
-        
-        .silex-id-1518189073412-38 {
-            width: 105px;
-            min-height: 22px;
-            top: 5px;
-            left: 0px;
-        }
-        
-        .silex-id-1518189082856-39 {
-            width: 105px;
-            min-height: 23px;
-            top: 30px;
-            left: 0px;
-        }
-        
-        .silex-id-1518189163858-44 {
-            width: 107px;
-            background-color: transparent;
-            min-height: 57px;
-            top: 10px;
-            left: 1200px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1518189163858-44 {
-                left: 362px;
-                top: 2748px;
-            }
-        }
-        
-        .silex-id-1518189163858-45 {
-            width: 105px;
-            min-height: 22px;
-            top: 5px;
-            left: 0px;
-        }
-        
-        .silex-id-1518189163860-46 {
-            width: 105px;
-            min-height: 23px;
-            top: 30px;
-            left: 0px;
-        }
-        
-        .silex-id-1518189163860-47 {
-            width: 105px;
-            min-height: 22px;
-            top: 5px;
-            left: 0px;
-        }
-        
-        .silex-id-1518189163861-48 {
-            width: 105px;
-            min-height: 23px;
-            top: 30px;
-            left: 0px;
-        }
-        
-        .silex-id-1518189163861-49 {
-            width: 105px;
-            min-height: 22px;
-            top: 5px;
-            left: 0px;
-        }
-        
-        .silex-id-1518189143498-40 {
-            width: 105px;
-            min-height: 22px;
-            top: 5px;
-            left: 0px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1518189143498-40 {
-                left: 185px;
-                top: 2653px;
-            }
-        }
-        
-        .silex-id-1518189163862-50 {
-            width: 105px;
-            min-height: 23px;
-            top: 30px;
-            left: 0px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1518189163862-50 {
-                left: 185px;
-                top: 2624px;
-            }
-        }
-        
-        .silex-id-1478366450713-3 {
-            top: 200px;
-            left: 5px;
-            background-color: transparent;
-            min-width: 1200px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1478366450713-3 {
-                top: 216px;
-                left: 0px;
-            }
-        }
-        
-        .silex-id-1478366450713-2 {
-            min-height: 1350px;
-            background-color: transparent;
-            width: 1200px;
-            top: 15px;
-            left: 204px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1478366450713-2 {
-                min-height: 1611px;
-            }
-        }
-        
-        .silex-id-1514918695533-12 {
-            width: 738px;
-            min-height: 69px;
-            top: 20px;
-            left: 20px;
-        }
-        
-        .silex-id-1514919105948-15 {
-            width: 905px;
-            background-color: rgb(255, 255, 255);
-            min-height: 600px;
-            top: 100px;
-            left: 150px;
-        }
-        
-        .silex-id-1514919273824-16 {
-            width: 825px;
-            min-height: 51px;
-            top: 730px;
-            left: 80px;
-        }
-        
-        .silex-id-1517409934831-2 {
-            width: 949px;
-            min-height: 70px;
-            top: 20px;
-            left: 20px;
-        }
-        
-        .silex-id-1517410039883-3 {
-            width: 750px;
-            background-color: rgb(255, 255, 255);
-            min-height: 603px;
-            top: 100px;
-            left: 5px;
-        }
-        
-        .silex-id-1517410206528-4 {
-            width: 1080px;
-            min-height: 99px;
-            top: 730px;
-            left: 60px;
-        }
-        
-        .silex-id-1517410535558-5 {
-            width: 1080px;
-            min-height: 432px;
-            top: 860px;
-            left: 60px;
-        }
-        
-        .silex-id-1514917916769-3 {
-            width: 949px;
-            min-height: 70px;
-            top: 20px;
-            left: 20px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1514917916769-3 {
-                left: 23px;
-                top: 3816px;
-            }
-        }
-        
-        .silex-id-1514917300601-1 {
-            width: 750px;
-            background-color: rgb(255, 255, 255);
-            min-height: 600px;
-            top: 100px;
-            left: 5px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1514917300601-1 {
-                left: 23px;
-                top: 2042px;
-            }
-        }
-        
-        .silex-id-1514917636733-2 {
-            width: 433px;
-            min-height: 638px;
-            top: 85px;
-            left: 760px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1514917636733-2 {
-                left: 29px;
-                top: 2007px;
-            }
-        }
-        
-        .silex-id-1514918005705-4 {
-            width: 1080px;
-            min-height: 99px;
-            top: 730px;
-            left: 60px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1514918005705-4 {
-                left: 23px;
-                top: 2469px;
-            }
-        }
-        
-        .silex-id-1515755105208-0 {
-            width: 1080px;
-            min-height: 432px;
-            top: 860px;
-            left: 60px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1515755105208-0 {
-                left: 23px;
-                top: 1844px;
-            }
-        }
-        
-        .silex-id-1514460718967-2 {
-            min-width: 1200px;
-            top: 200px;
-            left: 5px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1514460718967-2 {
-                top: 192px;
-                left: 0px;
-            }
-        }
-        
-        .silex-id-1514460718966-1 {
-            width: 1200px;
-            min-height: 650px;
-            top: 15px;
-            left: 204px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1514460718966-1 {
-                min-height: 311px;
-            }
-        }
-        
-        .silex-id-1515756409648-1 {
-            width: 738px;
-            min-height: 69px;
-            top: 20px;
-            left: 20px;
-        }
-        
-        .silex-id-1514918538454-9 {
-            width: 1120px;
-            min-height: 1309px;
-            top: 110px;
-            left: 40px;
-        }
-        
-        .silex-id-1517409754083-1 {
-            width: 651px;
-            min-height: 70px;
-            top: 20px;
-            left: 20px;
-        }
-        
-        .silex-id-1518180230311-8 {
-            width: 300px;
-            min-height: 168px;
-            top: 100px;
-            left: 40px;
-        }
-        
-        .silex-id-1514918669172-11 {
-            width: 651px;
-            min-height: 70px;
-            top: 20px;
-            left: 20px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1514918669172-11 {
-                left: 23px;
-                top: 1523px;
-            }
-        }
-        
-        .silex-id-1514918829738-13 {
-            width: 300px;
-            min-height: 168px;
-            top: 100px;
-            left: 40px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1514918829738-13 {
-                left: 157px;
-                top: 1071px;
-            }
-        }
-        
-        .silex-id-1514918644210-10 {
-            width: 219px;
-            min-height: 30px;
-            top: 280px;
-            left: 40px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1514918644210-10 {
-                left: 238px;
-                top: 1071px;
-            }
-        }
-        
-        .silex-id-1514918474297-8 {
-            min-width: 960px;
-            top: 1086px;
-            left: 5px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1514918474297-8 {
-                top: 216px;
-                left: 0px;
-            }
-        }
-        
-        .silex-id-1514918474296-7 {
-            width: 960px;
-            min-height: 1080px;
-            top: 15px;
-            left: 294px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1514918474296-7 {
-                min-height: 1905px;
-            }
-        }
-        
-        .silex-id-1515078124640-6 {
-            width: 875px;
-            min-height: 70px;
-            top: 20px;
-            left: 20px;
-        }
-        
-        .silex-id-1515103520913-12 {
-            width: 500px;
-            min-height: 89px;
-            top: 100px;
-            left: 60px;
-        }
-        
-        .silex-id-1518186205808-9 {
-            width: 500px;
-            min-height: 124px;
-            top: 100px;
-            left: 620px;
-        }
-        
-        .silex-id-1518187045301-10 {
-            width: 875px;
-            min-height: 70px;
-            top: 20px;
-            left: 20px;
-        }
-        
-        .silex-id-1518187045358-16 {
-            width: 500px;
-            min-height: 115px;
-            top: 100px;
-            left: 620px;
-        }
-        
-        .silex-id-1518187045327-11 {
-            width: 500px;
-            min-height: 89px;
-            top: 100px;
-            left: 60px;
-        }
-        
-        .silex-id-1518187045332-12 {
-            width: 500px;
-            min-height: 473px;
-            top: 214px;
-            left: 60px;
-        }
-        
-        .silex-id-1518187045351-15 {
-            width: 500px;
-            min-height: 332px;
-            top: 515px;
-            left: 620px;
-        }
-        
-        .silex-id-1518187045344-14 {
-            width: 500px;
-            min-height: 241px;
-            top: 249px;
-            left: 620px;
-        }
-        
-        .silex-id-1515078237663-9 {
-            width: 500px;
-            min-height: 309px;
-            top: 516px;
-            left: 615px;
-        }
-        
-        .silex-id-1520506896862-0 {
-            width: 100px;
-            background-color: transparent;
-            min-height: 25px;
-            top: 189px;
-            left: 463px;
-        }
-        
-        .silex-id-1515078124671-7 {
-            width: 500px;
-            min-height: 527px;
-            top: 214px;
-            left: 60px;
-        }
-        
-        .silex-id-1515104969599-13 {
-            width: 500px;
-            min-height: 310px;
-            top: 766px;
-            left: 60px;
-        }
-        
-        .silex-id-1515078124679-8 {
-            width: 500px;
-            min-height: 241px;
-            top: 250px;
-            left: 620px;
-        }
-        
-        .silex-id-1520507365215-2 {
-            width: 100px;
-            background-color: transparent;
-            min-height: 25px;
-            top: 740px;
-            left: 456px;
-        }
-        
-        .silex-id-1518187045338-13 {
-            width: 500px;
-            min-height: 273px;
-            top: 765px;
-            left: 60px;
-        }
-        
-        .silex-id-1515078047203-5 {
-            min-width: 1200px;
-            top: 200px;
-            left: 5px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1515078047203-5 {
-                top: 216px;
-                left: 0px;
-            }
-        }
-        
-        .silex-id-1515078047202-4 {
-            width: 1200px;
-            min-height: 500px;
-            top: 15px;
-            left: 204px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1515078047202-4 {
-                min-height: 739px;
-            }
-        }
-        
-        .silex-id-1517393494822-5 {
-            width: 400px;
-            min-height: 69px;
-            top: 20px;
-            left: 20px;
-        }
-        
-        .silex-id-1517393545812-6 {
-            width: 400px;
-            min-height: 69px;
-            top: 20px;
-            left: 20px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1517393545812-6 {
-                left: 23px;
-                top: 1785px;
-            }
-        }
-        
-        .silex-id-1515761692415-11 {
-            width: 1120px;
-            min-height: 374px;
-            top: 100px;
-            left: 40px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1515761692415-11 {
-                left: 23px;
-                top: 857px;
-            }
-        }
-        
-        .silex-id-1517393379094-4 {
-            width: 1120px;
-            min-height: 374px;
-            top: 100px;
-            left: 40px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1517393379094-4 {
-                left: 23px;
-                top: 890px;
-            }
-        }
-        
-        .silex-id-1515761331185-5 {
-            top: 1585px;
-            left: 5px;
-            min-width: 1200px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1515761331185-5 {
-                top: 192px;
-                left: 0px;
-            }
-        }
-        
-        .silex-id-1515761331184-4 {
-            width: 1200px;
-            min-height: 850px;
-            top: 15px;
-            left: 204px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1515761331184-4 {
-                min-height: 802px;
-            }
-        }
-        
-        .silex-id-1515761811585-12 {
-            width: 500px;
-            min-height: 69px;
-            top: 20px;
-            left: 20px;
-        }
-        
-        .silex-id-1517408129245-0 {
-            width: 500px;
-            min-height: 69px;
-            top: 20px;
-            left: 20px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1517408129245-0 {
-                left: 23px;
-                top: 2002px;
-            }
-        }
-        
-        .silex-id-1515761811608-13 {
-            width: 905px;
-            background-color: rgb(255, 255, 255);
-            min-height: 600px;
-            top: 100px;
-            left: 150px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1515761811608-13 {
-                left: 23px;
-                top: 1260px;
-            }
-        }
-        
-        .silex-id-1515761811618-14 {
-            width: 825px;
-            min-height: 61px;
-            top: 730px;
-            left: 80px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1515761811618-14 {
-                left: 23px;
-                top: 1260px;
-            }
-        }
-        
-        .silex-id-1517407809488-8 {
-            width: 825px;
-            min-height: 51px;
-            top: 730px;
-            left: 80px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1517407809488-8 {
-                left: 23px;
-                top: 1961px;
-            }
-        }
-        
-        .silex-id-1515761405023-7 {
-            top: 1680px;
-            left: 5px;
-            min-width: 1200px;
-        }
-        
-        .silex-id-1515761405022-6 {
-            width: 1200px;
-            min-height: 20px;
-            top: 15px;
-            left: 204px;
-        }
-        
-        .silex-id-1515761641046-9 {
-            min-width: 1200px;
-        }
-        
-        .silex-id-1515761641046-8 {
-            width: 1200px;
-            min-height: 60px;
-            top: 15px;
-            left: 204px;
-        }
-        
-        .silex-id-1442914737143-3 {
-            min-height: 25px;
-            width: 697px;
-            top: 15px;
-            left: 0px;
-        }
-        
-        .silex-id-1517393641184-7 {
-            min-height: 25px;
-            width: 697px;
-            top: 15px;
-            left: 0px;
-        }
-    </style>
+    <style class="silex-inline-styles" type="text/css">.body-initial {background-color: rgba(113,52,129,1); background-image: url('q_07.png'); background-attachment: fixed; background-position: center center; background-repeat: no-repeat; background-size: contain;}.silex-id-1478366444112-1 {top: 5px; left: 5px; background-color: transparent; min-width: 1200px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1478366444112-1 {top: 60px; left: 0px;}}.silex-id-1478366444112-0 {min-height: 160px; background-color: transparent; width: 1200px; top: 15px; left: 204px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1478366444112-0 {top: 0px; left: 12px; width: 446px; min-height: 132px;}}.silex-id-1515080148844-10 {width: 628px; background-color: transparent; min-height: 35px; top: 124px; left: 570px;}.silex-id-1514462318157-9 {width: 30px; min-height: 30px; top: 2px; left: 588px;}.silex-id-1514462264448-8 {width: 30px; min-height: 30px; top: 2px; left: 543px;}.silex-id-1514462141280-5 {width: 80px; min-height: 20px; top: 7px; left: 20px; border-radius: 0px 0px 0px 0px;}.silex-id-1514462161804-6 {width: 190px; min-height: 20px; top: 7px; left: 106px; background-color: transparent;}.silex-id-1514462242225-7 {width: 120px; min-height: 20px; top: 7px; left: 302px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1514462242225-7 {left: 286px; top: 1314px;}}.silex-id-1514919016814-14 {width: 105px; min-height: 20px; top: 7px; left: 428px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1514919016814-14 {left: 353px; top: 1145px;}}.silex-id-1518179420804-0 {width: 495px; min-height: 46px; top: 75px; left: 10px;}.silex-id-1518179636440-1 {width: 628px; background-color: transparent; min-height: 35px; top: 124px; left: 570px;}.silex-id-1518179636441-2 {width: 30px; min-height: 30px; top: 2px; left: 588px;}.silex-id-1518179636442-3 {width: 30px; min-height: 30px; top: 2px; left: 543px;}.silex-id-1518179636443-6 {width: 80px; min-height: 20px; top: 7px; left: 20px; border-radius: 0px 0px 0px 0px;}.silex-id-1518179636444-7 {width: 190px; min-height: 20px; top: 7px; left: 106px; background-color: transparent;}.silex-id-1518179636443-4 {width: 120px; min-height: 20px; top: 7px; left: 303px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518179636443-4 {left: 264px; top: 1077px;}}.silex-id-1518179636443-5 {width: 105px; min-height: 20px; top: 7px; left: 428px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518179636443-5 {left: 353px; top: 1077px;}}.silex-id-1514460770879-3 {width: 511px; min-height: 60px; top: 10px; left: 0px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1514460770879-3 {left: 23px; top: 2463px;}}.silex-id-1514460793313-4 {width: 495px; min-height: 46px; top: 75px; left: 10px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1514460793313-4 {left: 23px; top: 2463px;}}.silex-id-1518188806706-24 {width: 107px; background-color: transparent; min-height: 57px; top: 10px; left: 1200px;}.silex-id-1518188624516-22 {width: 105px; min-height: 22px; top: 5px; left: 0px;}.silex-id-1518188659662-23 {width: 105px; min-height: 23px; top: 30px; left: 0px;}.silex-id-1518188937243-25 {width: 107px; background-color: transparent; min-height: 57px; top: 10px; left: 1200px;}.silex-id-1518188937244-26 {width: 105px; min-height: 22px; top: 5px; left: 0px;}.silex-id-1518188937245-27 {width: 105px; min-height: 23px; top: 30px; left: 0px;}.silex-id-1518188979070-32 {width: 105px; min-height: 22px; top: 5px; left: 0px;}.silex-id-1518188969117-31 {width: 105px; min-height: 23px; top: 30px; left: 0px;}.silex-id-1518189062118-33 {width: 107px; background-color: transparent; min-height: 57px; top: 10px; left: 1200px;}.silex-id-1518189062118-34 {width: 105px; min-height: 22px; top: 5px; left: 0px;}.silex-id-1518189062120-35 {width: 105px; min-height: 23px; top: 30px; left: 0px;}.silex-id-1518189062121-36 {width: 105px; min-height: 22px; top: 5px; left: 0px;}.silex-id-1518189062121-37 {width: 105px; min-height: 23px; top: 30px; left: 0px;}.silex-id-1518189073412-38 {width: 105px; min-height: 22px; top: 5px; left: 0px;}.silex-id-1518189082856-39 {width: 105px; min-height: 23px; top: 30px; left: 0px;}.silex-id-1518189163858-44 {width: 107px; background-color: transparent; min-height: 57px; top: 10px; left: 1200px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518189163858-44 {left: 362px; top: 2748px;}}.silex-id-1518189163858-45 {width: 105px; min-height: 22px; top: 5px; left: 0px;}.silex-id-1518189163860-46 {width: 105px; min-height: 23px; top: 30px; left: 0px;}.silex-id-1518189163860-47 {width: 105px; min-height: 22px; top: 5px; left: 0px;}.silex-id-1518189163861-48 {width: 105px; min-height: 23px; top: 30px; left: 0px;}.silex-id-1518189163861-49 {width: 105px; min-height: 22px; top: 5px; left: 0px;}.silex-id-1518189143498-40 {width: 105px; min-height: 22px; top: 5px; left: 0px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518189143498-40 {left: 185px; top: 2653px;}}.silex-id-1518189163862-50 {width: 105px; min-height: 23px; top: 30px; left: 0px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1518189163862-50 {left: 185px; top: 2624px;}}.silex-id-1478366450713-3 {top: 200px; left: 5px; background-color: transparent; min-width: 1200px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1478366450713-3 {top: 216px; left: 0px;}}.silex-id-1478366450713-2 {min-height: 1350px; background-color: transparent; width: 1200px; top: 15px; left: 204px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1478366450713-2 {min-height: 1611px;}}.silex-id-1514918695533-12 {width: 738px; min-height: 69px; top: 20px; left: 20px;}.silex-id-1514919105948-15 {width: 905px; background-color: rgb(255, 255, 255); min-height: 600px; top: 100px; left: 150px;}.silex-id-1514919273824-16 {width: 825px; min-height: 51px; top: 730px; left: 80px;}.silex-id-1517409934831-2 {width: 949px; min-height: 70px; top: 20px; left: 20px;}.silex-id-1517410039883-3 {width: 750px; background-color: rgb(255, 255, 255); min-height: 603px; top: 100px; left: 5px;}.silex-id-1517410206528-4 {width: 1080px; min-height: 99px; top: 730px; left: 60px;}.silex-id-1517410535558-5 {width: 1080px; min-height: 432px; top: 860px; left: 60px;}.silex-id-1514917916769-3 {width: 949px; min-height: 70px; top: 20px; left: 20px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1514917916769-3 {left: 23px; top: 3816px;}}.silex-id-1514917300601-1 {width: 750px; background-color: rgb(255, 255, 255); min-height: 600px; top: 100px; left: 5px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1514917300601-1 {left: 23px; top: 2042px;}}.silex-id-1514917636733-2 {width: 433px; min-height: 638px; top: 85px; left: 760px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1514917636733-2 {left: 29px; top: 2007px;}}.silex-id-1514918005705-4 {width: 1080px; min-height: 99px; top: 730px; left: 60px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1514918005705-4 {left: 23px; top: 2469px;}}.silex-id-1515755105208-0 {width: 1080px; min-height: 432px; top: 860px; left: 60px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1515755105208-0 {left: 23px; top: 1844px;}}.silex-id-1514460718967-2 {min-width: 1200px; top: 200px; left: 5px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1514460718967-2 {top: 192px; left: 0px;}}.silex-id-1514460718966-1 {width: 1200px; min-height: 650px; top: 15px; left: 204px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1514460718966-1 {min-height: 311px;}}.silex-id-1515756409648-1 {width: 738px; min-height: 69px; top: 20px; left: 20px;}.silex-id-1514918538454-9 {width: 1120px; min-height: 1309px; top: 110px; left: 40px;}.silex-id-1517409754083-1 {width: 651px; min-height: 70px; top: 20px; left: 20px;}.silex-id-1518180230311-8 {width: 300px; min-height: 168px; top: 100px; left: 40px;}.silex-id-1514918669172-11 {width: 651px; min-height: 70px; top: 20px; left: 20px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1514918669172-11 {left: 23px; top: 1523px;}}.silex-id-1514918829738-13 {width: 300px; min-height: 168px; top: 100px; left: 40px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1514918829738-13 {left: 157px; top: 1071px;}}.silex-id-1514918644210-10 {width: 219px; min-height: 30px; top: 280px; left: 40px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1514918644210-10 {left: 238px; top: 1071px;}}.silex-id-1514918474297-8 {min-width: 960px; top: 200px; left: 5px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1514918474297-8 {top: 216px; left: 0px;}}.silex-id-1514918474296-7 {width: 960px; min-height: 1300px; top: 15px; left: 294px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1514918474296-7 {min-height: 1905px;}}.silex-id-1515078124640-6 {width: 875px; min-height: 70px; top: 20px; left: 20px;}.silex-id-1515103520913-12 {width: 500px; min-height: 89px; top: 100px; left: 60px;}.silex-id-1518186205808-9 {width: 500px; min-height: 124px; top: 100px; left: 620px;}.silex-id-1518187045301-10 {width: 875px; min-height: 70px; top: 20px; left: 20px;}.silex-id-1518187045358-16 {width: 500px; min-height: 115px; top: 100px; left: 620px;}.silex-id-1518187045327-11 {width: 500px; min-height: 89px; top: 100px; left: 60px;}.silex-id-1518187045332-12 {width: 500px; min-height: 473px; top: 214px; left: 60px;}.silex-id-1518187045351-15 {width: 500px; min-height: 332px; top: 515px; left: 620px;}.silex-id-1518187045344-14 {width: 500px; min-height: 241px; top: 249px; left: 620px;}.silex-id-1515078237663-9 {width: 500px; min-height: 309px; top: 516px; left: 615px;}.silex-id-1520506896862-0 {width: 100px; background-color: transparent; min-height: 25px; top: 189px; left: 463px;}.silex-id-1515078124671-7 {width: 500px; min-height: 527px; top: 214px; left: 60px;}.silex-id-1515104969599-13 {width: 500px; min-height: 310px; top: 766px; left: 60px;}.silex-id-1515078124679-8 {width: 500px; min-height: 241px; top: 250px; left: 620px;}.silex-id-1520507365215-2 {width: 100px; background-color: transparent; min-height: 25px; top: 740px; left: 456px;}.silex-id-1518187045338-13 {width: 500px; min-height: 273px; top: 766px; left: 60px;}.silex-id-1515078047203-5 {min-width: 1200px; top: 200px; left: 5px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1515078047203-5 {top: 216px; left: 0px;}}.silex-id-1515078047202-4 {width: 1200px; min-height: 500px; top: 15px; left: 204px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1515078047202-4 {min-height: 739px;}}.silex-id-1517393494822-5 {width: 400px; min-height: 69px; top: 20px; left: 20px;}.silex-id-1517393545812-6 {width: 400px; min-height: 69px; top: 20px; left: 20px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1517393545812-6 {left: 23px; top: 1785px;}}.silex-id-1515761692415-11 {width: 1120px; min-height: 374px; top: 100px; left: 40px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1515761692415-11 {left: 23px; top: 857px;}}.silex-id-1517393379094-4 {width: 1120px; min-height: 374px; top: 100px; left: 40px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1517393379094-4 {left: 23px; top: 890px;}}.silex-id-1515761331185-5 {top: 1585px; left: 5px; min-width: 1200px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1515761331185-5 {top: 192px; left: 0px;}}.silex-id-1515761331184-4 {width: 1200px; min-height: 850px; top: 15px; left: 204px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1515761331184-4 {min-height: 802px;}}.silex-id-1515761811585-12 {width: 500px; min-height: 69px; top: 20px; left: 20px;}.silex-id-1517408129245-0 {width: 500px; min-height: 69px; top: 20px; left: 20px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1517408129245-0 {left: 23px; top: 2002px;}}.silex-id-1515761811608-13 {width: 905px; background-color: rgb(255, 255, 255); min-height: 600px; top: 100px; left: 150px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1515761811608-13 {left: 23px; top: 1260px;}}.silex-id-1515761811618-14 {width: 825px; min-height: 61px; top: 730px; left: 80px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1515761811618-14 {left: 23px; top: 1260px;}}.silex-id-1517407809488-8 {width: 825px; min-height: 51px; top: 730px; left: 80px;}@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {.silex-id-1517407809488-8 {left: 23px; top: 1961px;}}.silex-id-1515761405023-7 {top: 1680px; left: 5px; min-width: 1200px;}.silex-id-1515761405022-6 {width: 1200px; min-height: 20px; top: 15px; left: 204px;}.silex-id-1515761641046-9 {min-width: 1200px;}.silex-id-1515761641046-8 {width: 1200px; min-height: 60px; top: 15px; left: 204px;}.silex-id-1442914737143-3 {min-height: 25px; width: 697px; top: 15px; left: 0px;}.silex-id-1517393641184-7 {min-height: 25px; width: 697px; top: 15px; left: 0px;}</style>
     <title>Constellations Brisées</title>
-    <script type="text/javascript" class="silex-json-styles">
-        [{"desktop":{"body-initial":{"background-color":"rgba(113,52,129,1)","background-image":"url('q_07.png')","background-attachment":"fixed","background-position":"center center","background-repeat":"no-repeat","background-size":"contain"},"silex-id-1474394621032-2":{"min-height":"64px","background-color":"transparent","width":"1200px","top":"15px","left":"204px"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1442914737143-3":{"min-height":"25px","width":"697px","top":"15px","left":"0px"},"silex-id-1478366444112-0":{"min-height":"160px","background-color":"transparent","width":"1200px","top":"15px","left":"204px"},"silex-id-1478366444112-1":{"top":"5px","left":"5px","background-color":"transparent","min-width":"1200px"},"silex-id-1478366450713-2":{"min-height":"1350px","background-color":"transparent","width":"1200px","top":"15px","left":"204px"},"silex-id-1478366450713-3":{"top":"200px","left":"5px","background-color":"transparent","min-width":"1200px"},"silex-id-1514460718966-1":{"width":"1200px","background-color":"","min-height":"650px","top":"15px","left":"204px"},"silex-id-1514460718967-2":{"min-width":"1200px","top":"200px","left":"5px"},"silex-id-1514460770879-3":{"width":"511px","min-height":"60px","top":"10px","left":"0px"},"silex-id-1514460793313-4":{"width":"495px","min-height":"46px","top":"75px","left":"10px"},"silex-id-1514462141280-5":{"width":"80px","min-height":"20px","top":"7px","left":"20px","border-radius":"0px 0px 0px 0px "},"silex-id-1514462161804-6":{"width":"190px","min-height":"20px","top":"7px","left":"106px","background-color":"transparent"},"silex-id-1514462242225-7":{"width":"120px","min-height":"20px","top":"7px","left":"302px"},"silex-id-1514462264448-8":{"width":"30px","min-height":"30px","top":"2px","left":"543px"},"silex-id-1514462318157-9":{"width":"30px","min-height":"30px","top":"2px","left":"588px"},"silex-id-1514917300601-1":{"width":"750px","background-color":"rgb(255, 255, 255)","min-height":"600px","top":"100px","left":"5px"},"silex-id-1514917636733-2":{"width":"433px","min-height":"638px","top":"85px","left":"760px"},"silex-id-1514917916769-3":{"width":"949px","min-height":"70px","top":"20px","left":"20px"},"silex-id-1514918005705-4":{"width":"1080px","min-height":"99px","top":"730px","left":"60px"},"silex-id-1514918474296-7":{"width":"960px","background-color":"","min-height":"1080px","top":"15px","left":"294px"},"silex-id-1514918474297-8":{"min-width":"960px","top":"1086px","left":"5px"},"silex-id-1514918538454-9":{"width":"1120px","min-height":"1309px","top":"110px","left":"40px"},"silex-id-1514918644210-10":{"width":"219px","min-height":"30px","top":"280px","left":"40px"},"silex-id-1514918669172-11":{"width":"651px","min-height":"70px","top":"20px","left":"20px"},"silex-id-1514918695533-12":{"width":"738px","min-height":"69px","top":"20px","left":"20px"},"silex-id-1514918829738-13":{"width":"300px","min-height":"168px","top":"100px","left":"40px"},"silex-id-1514919016814-14":{"width":"105px","min-height":"20px","top":"7px","left":"428px"},"silex-id-1514919105948-15":{"width":"905px","background-color":"rgb(255, 255, 255)","min-height":"600px","top":"100px","left":"150px"},"silex-id-1514919273824-16":{"width":"825px","min-height":"51px","top":"730px","left":"80px"},"silex-id-1515078047202-4":{"width":"1200px","background-color":"","min-height":"500px","top":"15px","left":"204px"},"silex-id-1515078047203-5":{"min-width":"1200px","top":"200px","left":"5px"},"silex-id-1515078124640-6":{"width":"875px","min-height":"70px","top":"20px","left":"20px"},"silex-id-1515078124671-7":{"width":"500px","min-height":"527px","top":"214px","left":"60px"},"silex-id-1515078124679-8":{"width":"500px","min-height":"241px","top":"250px","left":"620px"},"silex-id-1515078237663-9":{"width":"500px","min-height":"309px","top":"516px","left":"615px"},"silex-id-1515080148844-10":{"width":"628px","background-color":"transparent","min-height":"35px","top":"124px","left":"570px"},"silex-id-1515103520913-12":{"width":"500px","min-height":"89px","top":"100px","left":"60px"},"silex-id-1515104969599-13":{"width":"500px","min-height":"310px","top":"766px","left":"60px"},"silex-id-1515755105208-0":{"width":"1080px","min-height":"432px","top":"860px","left":"60px"},"silex-id-1515756409648-1":{"width":"738px","min-height":"69px","top":"20px","left":"20px"},"silex-id-1515761331184-4":{"width":"1200px","background-color":"","min-height":"850px","top":"15px","left":"204px"},"silex-id-1515761331185-5":{"top":"1585px","left":"5px","min-width":"1200px"},"silex-id-1515761405022-6":{"width":"1200px","background-color":"","min-height":"20px","top":"15px","left":"204px"},"silex-id-1515761405023-7":{"top":"1680px","left":"5px","min-width":"1200px"},"silex-id-1515761641046-8":{"width":"1200px","background-color":"","min-height":"60px","top":"15px","left":"204px"},"silex-id-1515761641046-9":{"min-width":"1200px"},"silex-id-1515761692415-11":{"width":"1120px","min-height":"374px","top":"100px","left":"40px"},"silex-id-1515761811585-12":{"width":"500px","min-height":"69px","top":"20px","left":"20px"},"silex-id-1515761811608-13":{"width":"905px","background-color":"rgb(255, 255, 255)","min-height":"600px","top":"100px","left":"150px"},"silex-id-1515761811618-14":{"width":"825px","min-height":"61px","top":"730px","left":"80px"},"silex-id-1517393066402-2":{"width":"738px","min-height":"69px","top":"20px","left":"20px"},"silex-id-1517393066403-3":{"width":"1120px","min-height":"374px","top":"100px","left":"40px"},"silex-id-1517393066402-1":{"width":"1200px","background-color":"","min-height":"500px","top":"15px","left":"204px"},"silex-id-1517393379094-4":{"width":"1120px","min-height":"374px","top":"100px","left":"40px"},"silex-id-1517393494822-5":{"width":"400px","min-height":"69px","top":"20px","left":"20px"},"silex-id-1517393545812-6":{"width":"400px","min-height":"69px","top":"20px","left":"20px"},"silex-id-1517393641184-7":{"min-height":"25px","width":"697px","top":"15px","left":"0px"},"silex-id-1517407809488-8":{"width":"825px","min-height":"51px","top":"730px","left":"80px"},"silex-id-1517408129245-0":{"width":"500px","min-height":"69px","top":"20px","left":"20px"},"silex-id-1517409754083-1":{"width":"651px","min-height":"70px","top":"20px","left":"20px"},"silex-id-1517409934831-2":{"width":"949px","min-height":"70px","top":"20px","left":"20px"},"silex-id-1517410039883-3":{"width":"750px","background-color":"rgb(255, 255, 255)","min-height":"603px","top":"100px","left":"5px"},"silex-id-1517410206528-4":{"width":"1080px","min-height":"99px","top":"730px","left":"60px"},"silex-id-1517410535558-5":{"width":"1080px","min-height":"432px","top":"860px","left":"60px"},"silex-id-1518179420804-0":{"width":"495px","min-height":"46px","top":"75px","left":"10px"},"silex-id-1518179636441-2":{"width":"30px","min-height":"30px","top":"2px","left":"588px"},"silex-id-1518179636442-3":{"width":"30px","min-height":"30px","top":"2px","left":"543px"},"silex-id-1518179636443-4":{"width":"120px","min-height":"20px","top":"7px","left":"303px"},"silex-id-1518179636443-5":{"width":"105px","min-height":"20px","top":"7px","left":"428px"},"silex-id-1518179636443-6":{"width":"80px","min-height":"20px","top":"7px","left":"20px","border-radius":"0px 0px 0px 0px "},"silex-id-1518179636444-7":{"width":"190px","min-height":"20px","top":"7px","left":"106px","background-color":"transparent"},"silex-id-1518179636440-1":{"width":"628px","background-color":"transparent","min-height":"35px","top":"124px","left":"570px"},"silex-id-1518180230311-8":{"width":"300px","min-height":"168px","top":"100px","left":"40px"},"silex-id-1518186205808-9":{"width":"500px","min-height":"124px","top":"100px","left":"620px"},"silex-id-1518187045301-10":{"width":"875px","min-height":"70px","top":"20px","left":"20px"},"silex-id-1518187045327-11":{"width":"500px","min-height":"89px","top":"100px","left":"60px"},"silex-id-1518187045332-12":{"width":"500px","min-height":"473px","top":"214px","left":"60px"},"silex-id-1518187045338-13":{"width":"500px","min-height":"273px","top":"765px","left":"60px"},"silex-id-1518187045344-14":{"width":"500px","min-height":"241px","top":"249px","left":"620px"},"silex-id-1518187045351-15":{"width":"500px","min-height":"332px","top":"515px","left":"620px"},"silex-id-1518187045358-16":{"width":"500px","min-height":"115px","top":"100px","left":"620px"},"silex-id-1518187819932-17":{"width":"","background-color":"","min-height":"100px"},"silex-id-1518188624516-22":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518188659662-23":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518188806706-24":{"width":"107px","background-color":"transparent","min-height":"57px","top":"10px","left":"1200px"},"silex-id-1518188937244-26":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518188937245-27":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518188937243-25":{"width":"107px","background-color":"transparent","min-height":"57px","top":"10px","left":"1200px"},"silex-id-1518188952977-29":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518188952978-30":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518188969117-31":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518188979070-32":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189062118-34":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189062120-35":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518189062121-36":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189062121-37":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518189062118-33":{"width":"107px","background-color":"transparent","min-height":"57px","top":"10px","left":"1200px"},"silex-id-1518189073412-38":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189082856-39":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518189143498-40":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189151260-42":{"width":"105px","min-height":"20px","top":"5px","left":"0px"},"silex-id-1518189163858-45":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189163860-46":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518189163860-47":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189163861-48":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518189163861-49":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189163862-50":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518189163858-44":{"width":"107px","background-color":"transparent","min-height":"57px","top":"10px","left":"1200px"},"silex-id-1518189171338-52":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189171339-53":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518189171339-54":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189171340-55":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518189171341-56":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189171341-57":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520506896862-0":{"width":"100px","background-color":"transparent","min-height":"25px","top":"189px","left":"463px"},"silex-id-1520507365215-2":{"width":"100px","background-color":"transparent","min-height":"25px","top":"740px","left":"456px"},"silex-id-1520508792665-4":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520508792667-5":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520508792668-6":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520508792669-7":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520508792670-8":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520508792672-9":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520508792673-10":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520508811710-11":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520508811749-12":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521472120-14":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521472121-15":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521472122-16":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521472123-17":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521472126-18":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521472128-19":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521472130-20":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521472131-21":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521472131-22":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521729555-24":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521729556-25":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521729557-26":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521729559-27":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521729560-28":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521729562-29":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521729563-30":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521729564-31":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521729565-32":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521743837-34":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521743838-35":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521743839-36":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521743840-37":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521743841-38":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521743841-39":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521743842-40":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521743843-41":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521743844-42":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521752161-44":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521752163-45":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521752164-46":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521752165-47":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521752165-48":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521752166-49":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521752167-50":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521752168-51":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521752169-52":{"width":"105px","min-height":"23px","top":"30px","left":"0px"}},"mobile":{"silex-id-1517393545812-6":{"left":"23px","top":"1785px"},"silex-id-1515761692415-11":{"left":"23px","top":"857px"},"silex-id-1514462242225-7":{"left":"286px","top":"1314px"},"silex-id-1517393379094-4":{"left":"23px","top":"890px"},"silex-id-1517408129245-0":{"left":"23px","top":"2002px"},"silex-id-1515761811608-13":{"left":"23px","top":"1260px"},"silex-id-1515761811618-14":{"left":"23px","top":"1260px"},"silex-id-1517407809488-8":{"left":"23px","top":"1961px"},"silex-id-1514918669172-11":{"left":"23px","top":"1523px"},"silex-id-1514918829738-13":{"left":"157px","top":"1071px"},"silex-id-1514918644210-10":{"left":"238px","top":"1071px"},"silex-id-1514917916769-3":{"left":"23px","top":"3816px"},"silex-id-1514917300601-1":{"left":"23px","top":"2042px"},"silex-id-1514917636733-2":{"left":"29px","top":"2007px"},"silex-id-1514918005705-4":{"left":"23px","top":"2469px"},"silex-id-1515755105208-0":{"left":"23px","top":"1844px"},"silex-id-1518179636443-4":{"left":"264px","top":"1077px"},"silex-id-1518179636443-5":{"left":"353px","top":"1077px"},"silex-id-1514919016814-14":{"left":"353px","top":"1145px"},"silex-id-1518189163858-44":{"left":"362px","top":"2748px"},"silex-id-1478366444112-0":{"top":"0px","left":"12px","width":"446px","min-height":"132px"},"silex-id-1478366444112-1":{"top":"60px","left":"0px"},"silex-id-1518189143498-40":{"left":"185px","top":"2653px"},"silex-id-1518189163862-50":{"left":"185px","top":"2624px"},"silex-id-1514460770879-3":{"left":"23px","top":"2463px"},"silex-id-1514460793313-4":{"left":"23px","top":"2463px"},"silex-id-1515078047203-5":{"top":"216px","left":"0px"},"silex-id-1515078047202-4":{"min-height":"739px"},"silex-id-1514460718967-2":{"top":"192px","left":"0px"},"silex-id-1514460718966-1":{"min-height":"311px"},"silex-id-1478366450713-3":{"top":"216px","left":"0px"},"silex-id-1478366450713-2":{"min-height":"1611px"},"silex-id-1515761331185-5":{"top":"192px","left":"0px"},"silex-id-1515761331184-4":{"min-height":"802px"},"silex-id-1514918474297-8":{"top":"216px","left":"0px"},"silex-id-1514918474296-7":{"min-height":"1905px"}},"componentData":{}}]
-    </script>
+    <script type="text/json" class="silex-json-styles">[{"desktop":{"body-initial":{"background-color":"rgba(113,52,129,1)","background-image":"url('q_07.png')","background-attachment":"fixed","background-position":"center center","background-repeat":"no-repeat","background-size":"contain"},"silex-id-1474394621032-2":{"min-height":"64px","background-color":"transparent","width":"1200px","top":"15px","left":"204px"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1442914737143-3":{"min-height":"25px","width":"697px","top":"15px","left":"0px"},"silex-id-1478366444112-0":{"min-height":"160px","background-color":"transparent","width":"1200px","top":"15px","left":"204px"},"silex-id-1478366444112-1":{"top":"5px","left":"5px","background-color":"transparent","min-width":"1200px"},"silex-id-1478366450713-2":{"min-height":"1350px","background-color":"transparent","width":"1200px","top":"15px","left":"204px"},"silex-id-1478366450713-3":{"top":"200px","left":"5px","background-color":"transparent","min-width":"1200px"},"silex-id-1514460718966-1":{"width":"1200px","background-color":"","min-height":"650px","top":"15px","left":"204px"},"silex-id-1514460718967-2":{"min-width":"1200px","top":"200px","left":"5px"},"silex-id-1514460770879-3":{"width":"511px","min-height":"60px","top":"10px","left":"0px"},"silex-id-1514460793313-4":{"width":"495px","min-height":"46px","top":"75px","left":"10px"},"silex-id-1514462141280-5":{"width":"80px","min-height":"20px","top":"7px","left":"20px","border-radius":"0px 0px 0px 0px "},"silex-id-1514462161804-6":{"width":"190px","min-height":"20px","top":"7px","left":"106px","background-color":"transparent"},"silex-id-1514462242225-7":{"width":"120px","min-height":"20px","top":"7px","left":"302px"},"silex-id-1514462264448-8":{"width":"30px","min-height":"30px","top":"2px","left":"543px"},"silex-id-1514462318157-9":{"width":"30px","min-height":"30px","top":"2px","left":"588px"},"silex-id-1514917300601-1":{"width":"750px","background-color":"rgb(255, 255, 255)","min-height":"600px","top":"100px","left":"5px"},"silex-id-1514917636733-2":{"width":"433px","min-height":"638px","top":"85px","left":"760px"},"silex-id-1514917916769-3":{"width":"949px","min-height":"70px","top":"20px","left":"20px"},"silex-id-1514918005705-4":{"width":"1080px","min-height":"99px","top":"730px","left":"60px"},"silex-id-1514918474296-7":{"width":"960px","background-color":"","min-height":"1300px","top":"15px","left":"294px"},"silex-id-1514918474297-8":{"min-width":"960px","top":"200px","left":"5px"},"silex-id-1514918538454-9":{"width":"1120px","min-height":"1309px","top":"110px","left":"40px"},"silex-id-1514918644210-10":{"width":"219px","min-height":"30px","top":"280px","left":"40px"},"silex-id-1514918669172-11":{"width":"651px","min-height":"70px","top":"20px","left":"20px"},"silex-id-1514918695533-12":{"width":"738px","min-height":"69px","top":"20px","left":"20px"},"silex-id-1514918829738-13":{"width":"300px","min-height":"168px","top":"100px","left":"40px"},"silex-id-1514919016814-14":{"width":"105px","min-height":"20px","top":"7px","left":"428px"},"silex-id-1514919105948-15":{"width":"905px","background-color":"rgb(255, 255, 255)","min-height":"600px","top":"100px","left":"150px"},"silex-id-1514919273824-16":{"width":"825px","min-height":"51px","top":"730px","left":"80px"},"silex-id-1515078047202-4":{"width":"1200px","background-color":"","min-height":"500px","top":"15px","left":"204px"},"silex-id-1515078047203-5":{"min-width":"1200px","top":"200px","left":"5px"},"silex-id-1515078124640-6":{"width":"875px","min-height":"70px","top":"20px","left":"20px"},"silex-id-1515078124671-7":{"width":"500px","min-height":"527px","top":"214px","left":"60px"},"silex-id-1515078124679-8":{"width":"500px","min-height":"241px","top":"250px","left":"620px"},"silex-id-1515078237663-9":{"width":"500px","min-height":"309px","top":"516px","left":"615px"},"silex-id-1515080148844-10":{"width":"628px","background-color":"transparent","min-height":"35px","top":"124px","left":"570px"},"silex-id-1515103520913-12":{"width":"500px","min-height":"89px","top":"100px","left":"60px"},"silex-id-1515104969599-13":{"width":"500px","min-height":"310px","top":"766px","left":"60px"},"silex-id-1515755105208-0":{"width":"1080px","min-height":"432px","top":"860px","left":"60px"},"silex-id-1515756409648-1":{"width":"738px","min-height":"69px","top":"20px","left":"20px"},"silex-id-1515761331184-4":{"width":"1200px","background-color":"","min-height":"850px","top":"15px","left":"204px"},"silex-id-1515761331185-5":{"top":"1585px","left":"5px","min-width":"1200px"},"silex-id-1515761405022-6":{"width":"1200px","background-color":"","min-height":"20px","top":"15px","left":"204px"},"silex-id-1515761405023-7":{"top":"1680px","left":"5px","min-width":"1200px"},"silex-id-1515761641046-8":{"width":"1200px","background-color":"","min-height":"60px","top":"15px","left":"204px"},"silex-id-1515761641046-9":{"min-width":"1200px"},"silex-id-1515761692415-11":{"width":"1120px","min-height":"374px","top":"100px","left":"40px"},"silex-id-1515761811585-12":{"width":"500px","min-height":"69px","top":"20px","left":"20px"},"silex-id-1515761811608-13":{"width":"905px","background-color":"rgb(255, 255, 255)","min-height":"600px","top":"100px","left":"150px"},"silex-id-1515761811618-14":{"width":"825px","min-height":"61px","top":"730px","left":"80px"},"silex-id-1517393066402-2":{"width":"738px","min-height":"69px","top":"20px","left":"20px"},"silex-id-1517393066403-3":{"width":"1120px","min-height":"374px","top":"100px","left":"40px"},"silex-id-1517393066402-1":{"width":"1200px","background-color":"","min-height":"500px","top":"15px","left":"204px"},"silex-id-1517393379094-4":{"width":"1120px","min-height":"374px","top":"100px","left":"40px"},"silex-id-1517393494822-5":{"width":"400px","min-height":"69px","top":"20px","left":"20px"},"silex-id-1517393545812-6":{"width":"400px","min-height":"69px","top":"20px","left":"20px"},"silex-id-1517393641184-7":{"min-height":"25px","width":"697px","top":"15px","left":"0px"},"silex-id-1517407809488-8":{"width":"825px","min-height":"51px","top":"730px","left":"80px"},"silex-id-1517408129245-0":{"width":"500px","min-height":"69px","top":"20px","left":"20px"},"silex-id-1517409754083-1":{"width":"651px","min-height":"70px","top":"20px","left":"20px"},"silex-id-1517409934831-2":{"width":"949px","min-height":"70px","top":"20px","left":"20px"},"silex-id-1517410039883-3":{"width":"750px","background-color":"rgb(255, 255, 255)","min-height":"603px","top":"100px","left":"5px"},"silex-id-1517410206528-4":{"width":"1080px","min-height":"99px","top":"730px","left":"60px"},"silex-id-1517410535558-5":{"width":"1080px","min-height":"432px","top":"860px","left":"60px"},"silex-id-1518179420804-0":{"width":"495px","min-height":"46px","top":"75px","left":"10px"},"silex-id-1518179636441-2":{"width":"30px","min-height":"30px","top":"2px","left":"588px"},"silex-id-1518179636442-3":{"width":"30px","min-height":"30px","top":"2px","left":"543px"},"silex-id-1518179636443-4":{"width":"120px","min-height":"20px","top":"7px","left":"303px"},"silex-id-1518179636443-5":{"width":"105px","min-height":"20px","top":"7px","left":"428px"},"silex-id-1518179636443-6":{"width":"80px","min-height":"20px","top":"7px","left":"20px","border-radius":"0px 0px 0px 0px "},"silex-id-1518179636444-7":{"width":"190px","min-height":"20px","top":"7px","left":"106px","background-color":"transparent"},"silex-id-1518179636440-1":{"width":"628px","background-color":"transparent","min-height":"35px","top":"124px","left":"570px"},"silex-id-1518180230311-8":{"width":"300px","min-height":"168px","top":"100px","left":"40px"},"silex-id-1518186205808-9":{"width":"500px","min-height":"124px","top":"100px","left":"620px"},"silex-id-1518187045301-10":{"width":"875px","min-height":"70px","top":"20px","left":"20px"},"silex-id-1518187045327-11":{"width":"500px","min-height":"89px","top":"100px","left":"60px"},"silex-id-1518187045332-12":{"width":"500px","min-height":"473px","top":"214px","left":"60px"},"silex-id-1518187045338-13":{"width":"500px","min-height":"273px","top":"766px","left":"60px"},"silex-id-1518187045344-14":{"width":"500px","min-height":"241px","top":"249px","left":"620px"},"silex-id-1518187045351-15":{"width":"500px","min-height":"332px","top":"515px","left":"620px"},"silex-id-1518187045358-16":{"width":"500px","min-height":"115px","top":"100px","left":"620px"},"silex-id-1518187819932-17":{"width":"","background-color":"","min-height":"100px"},"silex-id-1518188624516-22":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518188659662-23":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518188806706-24":{"width":"107px","background-color":"transparent","min-height":"57px","top":"10px","left":"1200px"},"silex-id-1518188937244-26":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518188937245-27":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518188937243-25":{"width":"107px","background-color":"transparent","min-height":"57px","top":"10px","left":"1200px"},"silex-id-1518188952977-29":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518188952978-30":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518188969117-31":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518188979070-32":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189062118-34":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189062120-35":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518189062121-36":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189062121-37":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518189062118-33":{"width":"107px","background-color":"transparent","min-height":"57px","top":"10px","left":"1200px"},"silex-id-1518189073412-38":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189082856-39":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518189143498-40":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189151260-42":{"width":"105px","min-height":"20px","top":"5px","left":"0px"},"silex-id-1518189163858-45":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189163860-46":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518189163860-47":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189163861-48":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518189163861-49":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189163862-50":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518189163858-44":{"width":"107px","background-color":"transparent","min-height":"57px","top":"10px","left":"1200px"},"silex-id-1518189171338-52":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189171339-53":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518189171339-54":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189171340-55":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1518189171341-56":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1518189171341-57":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520506896862-0":{"width":"100px","background-color":"transparent","min-height":"25px","top":"189px","left":"463px"},"silex-id-1520507365215-2":{"width":"100px","background-color":"transparent","min-height":"25px","top":"740px","left":"456px"},"silex-id-1520508792665-4":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520508792667-5":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520508792668-6":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520508792669-7":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520508792670-8":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520508792672-9":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520508792673-10":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520508811710-11":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520508811749-12":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521472120-14":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521472121-15":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521472122-16":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521472123-17":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521472126-18":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521472128-19":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521472130-20":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521472131-21":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521472131-22":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521729555-24":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521729556-25":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521729557-26":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521729559-27":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521729560-28":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521729562-29":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521729563-30":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521729564-31":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521729565-32":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521743837-34":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521743838-35":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521743839-36":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521743840-37":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521743841-38":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521743841-39":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521743842-40":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521743843-41":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521743844-42":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521752161-44":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521752163-45":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521752164-46":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521752165-47":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521752165-48":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521752166-49":{"width":"105px","min-height":"23px","top":"30px","left":"0px"},"silex-id-1520521752167-50":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521752168-51":{"width":"105px","min-height":"22px","top":"5px","left":"0px"},"silex-id-1520521752169-52":{"width":"105px","min-height":"23px","top":"30px","left":"0px"}},"mobile":{"silex-id-1517393545812-6":{"left":"23px","top":"1785px"},"silex-id-1515761692415-11":{"left":"23px","top":"857px"},"silex-id-1514462242225-7":{"left":"286px","top":"1314px"},"silex-id-1517393379094-4":{"left":"23px","top":"890px"},"silex-id-1517408129245-0":{"left":"23px","top":"2002px"},"silex-id-1515761811608-13":{"left":"23px","top":"1260px"},"silex-id-1515761811618-14":{"left":"23px","top":"1260px"},"silex-id-1517407809488-8":{"left":"23px","top":"1961px"},"silex-id-1514918669172-11":{"left":"23px","top":"1523px"},"silex-id-1514918829738-13":{"left":"157px","top":"1071px"},"silex-id-1514918644210-10":{"left":"238px","top":"1071px"},"silex-id-1514917916769-3":{"left":"23px","top":"3816px"},"silex-id-1514917300601-1":{"left":"23px","top":"2042px"},"silex-id-1514917636733-2":{"left":"29px","top":"2007px"},"silex-id-1514918005705-4":{"left":"23px","top":"2469px"},"silex-id-1515755105208-0":{"left":"23px","top":"1844px"},"silex-id-1518179636443-4":{"left":"264px","top":"1077px"},"silex-id-1518179636443-5":{"left":"353px","top":"1077px"},"silex-id-1514919016814-14":{"left":"353px","top":"1145px"},"silex-id-1518189163858-44":{"left":"362px","top":"2748px"},"silex-id-1478366444112-0":{"top":"0px","left":"12px","width":"446px","min-height":"132px"},"silex-id-1478366444112-1":{"top":"60px","left":"0px"},"silex-id-1518189143498-40":{"left":"185px","top":"2653px"},"silex-id-1518189163862-50":{"left":"185px","top":"2624px"},"silex-id-1514460770879-3":{"left":"23px","top":"2463px"},"silex-id-1514460793313-4":{"left":"23px","top":"2463px"},"silex-id-1515078047203-5":{"top":"216px","left":"0px"},"silex-id-1515078047202-4":{"min-height":"739px"},"silex-id-1514460718967-2":{"top":"192px","left":"0px"},"silex-id-1514460718966-1":{"min-height":"311px"},"silex-id-1478366450713-3":{"top":"216px","left":"0px"},"silex-id-1478366450713-2":{"min-height":"1611px"},"silex-id-1515761331185-5":{"top":"192px","left":"0px"},"silex-id-1515761331184-4":{"min-height":"802px"},"silex-id-1514918474297-8":{"top":"216px","left":"0px"},"silex-id-1514918474296-7":{"min-height":"1905px"}},"componentData":{}}]</script>
 
 
 
@@ -1096,11 +32,7 @@
 
 
     <meta name="website-width" content="960">
-    <style type="text/css" class="silex-style-settings">
-        .website-width {
-            width: 960px;
-        }
-    </style>
+    <style type="text/css" class="silex-style-settings">.website-width {width: 960px;}</style>
 
 
 
@@ -1122,7 +54,7 @@
     <link href="../../../../../../../favicon.png" rel="shortcut icon">
 
     <meta name="twitter:site" content="@QueerCodeQR">
-    <meta name="publicationPath" content="/api/1.0/github/exec/put///constellationsbrisees/master/site02">
+    
     <meta name="twitter:title" content="Constellations Brisées">
     <meta name="og:title" content="Constellations Brisées">
 
@@ -1147,25 +79,19 @@
 
 
 
-    <meta name="twitter:card" content="summary">
-    <style id="current-page-style">
-        .page-accueil {
-            display: inherit;
-        }
-    </style>
-    <!-- Silex HEAD tag do not remove -->
-    <!-- End of Silex HEAD tag do not remove -->
-</head>
+    
+    
+    
+<meta name="twitter:card" content="summary"><!-- Silex HEAD tag do not remove -->
+    <!-- End of Silex HEAD tag do not remove --></head>
 
 <body data-silex-id="body-initial" class="body-initial enable-mobile silex-runtime" data-silex-type="container">
     <div class="silex-pages">
-        <div data-silex-type="image" class="editable-style silex-id-hamburger-menu image-element menu-button prevent-draggable prevent-resizable page-link-active" data-silex-id="silex-id-hamburger-menu" data-silex-href="#!page-accueil">
-            <img alt="open mobile menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAB5UlEQVR42u2ZPWvCUBSGM+UfFO3e3dLu/QN+oKj4EUXRQREEJYgoiCAu6qCogyDo7iJ21UUaKqEgCC4iiEMGB3UVgsnpTWj/wfVK2nvhGbKEPJyT996TMMzPGg6H5mKx+GgkyuWyeTQasb8OTDwef4tEIp8+n+/LYIjJZJJHQiwzm81M6OLDarWqNpsNjEYgEJCy2ewT0+/3TagighElNFAnQT6ft1ARKkJFqMgfFvF4PFpuEwFtdrcRqVarIIoirFYrIiyXSxiPx+B2u/GJBINBuF6vQHopigK1Wg2fCMdxcLlciIuoqgqNRgOfiN1uB3Qwg91uB8fjkQiHwwEmkwne1qLxS0VuKKJle71eh06nQ4Rmswk8z+MVcTqdsNlsQJZlotF7Pp8hk8ngE4lGo/qN7xG/vV4Pb0Xm8zlxkdPpBGgMx/+yJxIJKBQKRMjlcuBwOGhq/Q+RcDgMsViMCFrAuFwu/CKDwQC22y1IkkSE/X4PgiDo+xc2Ea0S9zjGa/Hb7Xbxifj9fj0K7yFSqVTwtlY6nYbpdKpPiSRYLBbQarX0PYymFhWhIlSEilCRW6GdyUqlkoVZr9dsKpXiOY6TtW+7BkNBz/7ebrcf9L+6Xq+XRYPMMyrTq5EIhUIvaAjTJb4BBNQ2yhnth0wAAAAASUVORK5CYII="
-                class="silex-element-content">
+        <div data-silex-type="image" class="editable-style silex-id-hamburger-menu image-element menu-button prevent-draggable prevent-resizable" data-silex-id="silex-id-hamburger-menu" data-silex-href="#!page-accueil">
+            <img alt="open mobile menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAB5UlEQVR42u2ZPWvCUBSGM+UfFO3e3dLu/QN+oKj4EUXRQREEJYgoiCAu6qCogyDo7iJ21UUaKqEgCC4iiEMGB3UVgsnpTWj/wfVK2nvhGbKEPJyT996TMMzPGg6H5mKx+GgkyuWyeTQasb8OTDwef4tEIp8+n+/LYIjJZJJHQiwzm81M6OLDarWqNpsNjEYgEJCy2ewT0+/3TagighElNFAnQT6ft1ARKkJFqMgfFvF4PFpuEwFtdrcRqVarIIoirFYrIiyXSxiPx+B2u/GJBINBuF6vQHopigK1Wg2fCMdxcLlciIuoqgqNRgOfiN1uB3Qwg91uB8fjkQiHwwEmkwne1qLxS0VuKKJle71eh06nQ4Rmswk8z+MVcTqdsNlsQJZlotF7Pp8hk8ngE4lGo/qN7xG/vV4Pb0Xm8zlxkdPpBGgMx/+yJxIJKBQKRMjlcuBwOGhq/Q+RcDgMsViMCFrAuFwu/CKDwQC22y1IkkSE/X4PgiDo+xc2Ea0S9zjGa/Hb7Xbxifj9fj0K7yFSqVTwtlY6nYbpdKpPiSRYLBbQarX0PYymFhWhIlSEilCRW6GdyUqlkoVZr9dsKpXiOY6TtW+7BkNBz/7ebrcf9L+6Xq+XRYPMMyrTq5EIhUIvaAjTJb4BBNQ2yhnth0wAAAAASUVORK5CYII=" class="silex-element-content">
         </div>
 
-        <a id="page-accueil" data-silex-type="page" class="page-element page-link-active">Accueil</a><a id="page-cartographie-des-constellations" data-silex-type="page" class="page-element">cartographie des Constellations</a><a id="page-les-parcours"
-            data-silex-type="page" class="page-element">Les parcours</a>
+        <a id="page-accueil" data-silex-type="page" class="page-element">Accueil</a><a id="page-cartographie-des-constellations" data-silex-type="page" class="page-element">cartographie des Constellations</a><a id="page-les-parcours" data-silex-type="page" class="page-element">Les parcours</a>
         <a id="page-parcours-de-th-r-se-pierre" data-silex-type="page" class="page-element">Parcours de Thérèse Pierre</a><a id="page-ressources" data-silex-type="page" class="page-element">ressources</a><a id="page-home" data-silex-type="page" class="page-element">Home</a>
         <a id="page-mapping-constellations" data-silex-type="page" class="page-element">Mapping constellations</a>
         <a id="page-the-paths" data-silex-type="page" class="page-element">The paths</a><a id="page-path-of-th-r-se-pierre" data-silex-type="page" class="page-element">Path of Thérèse Pierre</a><a id="page-resources" data-silex-type="page" class="page-element">Resources</a></div>
@@ -1189,13 +115,12 @@
 
 
 
-            <div data-silex-type="container" class="editable-style silex-id-1515080148844-10 container-element nav page-accueil paged-element page-ressources page-les-parcours page-cartographie-des-constellations page-parcours-de-th-r-se-pierre hide-on-mobile" data-silex-id="silex-id-1515080148844-10"
-                style="">
+            <div data-silex-type="container" class="editable-style silex-id-1515080148844-10 container-element nav page-accueil paged-element page-ressources page-les-parcours page-cartographie-des-constellations page-parcours-de-th-r-se-pierre hide-on-mobile" data-silex-id="silex-id-1515080148844-10" style="">
                 <div data-silex-type="image" class="editable-style silex-id-1514462318157-9 image-element" data-silex-id="silex-id-1514462318157-9" style="" data-silex-href="https://twitter.com/QueerCodeQR"><img src="twitter_queercode.png" class="silex-element-content"></div>
                 <div data-silex-type="image" class="editable-style silex-id-1514462264448-8 image-element" data-silex-id="silex-id-1514462264448-8" style="" data-silex-href="https://www.facebook.com/QueeR-code-1646503238931149/timeline/"><img src="fb_queercode.png" class="silex-element-content"></div>
 
 
-                <div data-silex-type="text" class="editable-style silex-id-1514462141280-5 text-element nav-element page-link-active" data-silex-id="silex-id-1514462141280-5" style="" data-silex-href="#!page-accueil">
+                <div data-silex-type="text" class="editable-style silex-id-1514462141280-5 text-element nav-element" data-silex-id="silex-id-1514462141280-5" style="" data-silex-href="#!page-accueil">
                     <div class="silex-element-content normal">
                         <div style="text-align: center;">
                             <div style="text-align: center;"><span style="font-family: georgia, serif;"><span style="color: rgb(255, 255, 255);"><font size="3">Accueil</font></span></span><br></div><span style="font-family: georgia, serif;"><span style="color: rgb(255, 255, 255);"></span></span>
@@ -1245,22 +170,19 @@
 
                 </span></div>
             </div>
-            <div data-silex-type="container" class="editable-style container-element nav silex-id-1518179636440-1 paged-element page-home page-mapping-constellations page-the-paths page-resources page-path-of-th-r-se-pierre" data-silex-id="silex-id-1518179636440-1"
-                style="">
+            <div data-silex-type="container" class="editable-style container-element nav silex-id-1518179636440-1 paged-element page-home page-mapping-constellations page-the-paths page-resources page-path-of-th-r-se-pierre paged-element-visible" data-silex-id="silex-id-1518179636440-1" style="">
                 <div data-silex-type="image" class="editable-style image-element silex-id-1518179636441-2" data-silex-id="silex-id-1518179636441-2" style="" data-silex-href="https://twitter.com/QueerCodeQR"><img src="twitter_queercode.png" class="silex-element-content"></div>
                 <div data-silex-type="image" class="editable-style image-element silex-id-1518179636442-3" data-silex-id="silex-id-1518179636442-3" style="" data-silex-href="https://www.facebook.com/QueeR-code-1646503238931149/timeline/"><img src="fb_queercode.png" class="silex-element-content"></div>
 
 
-                <div data-silex-type="text" class="editable-style text-element nav-element silex-id-1518179636443-6 page-home paged-element page-mapping-constellations page-the-paths page-path-of-th-r-se-pierre page-resources" data-silex-id="silex-id-1518179636443-6"
-                    style="" data-silex-href="#!page-home">
+                <div data-silex-type="text" class="editable-style text-element nav-element silex-id-1518179636443-6 page-home paged-element page-mapping-constellations page-the-paths page-path-of-th-r-se-pierre page-resources" data-silex-id="silex-id-1518179636443-6" style="" data-silex-href="#!page-home">
                     <div class="silex-element-content normal">
                         <div style="text-align: center;">
                             <div style="text-align: center;"><span style="font-family: georgia, serif;"><span style="color: rgb(255, 255, 255);"><font size="3">Home</font></span></span><br></div><span style="font-family: georgia, serif;"><span style="color: rgb(255, 255, 255);"></span></span>
                         </div>
                     </div>
                 </div>
-                <div data-silex-type="text" class="editable-style text-element nav-element silex-id-1518179636444-7 page-home paged-element page-mapping-constellations page-the-paths page-path-of-th-r-se-pierre page-resources" data-silex-id="silex-id-1518179636444-7"
-                    style="" data-silex-href="#!page-mapping-constellations">
+                <div data-silex-type="text" class="editable-style text-element nav-element silex-id-1518179636444-7 page-home paged-element page-mapping-constellations page-the-paths page-path-of-th-r-se-pierre page-resources paged-element-visible" data-silex-id="silex-id-1518179636444-7" style="" data-silex-href="#!page-mapping-constellations">
                     <div class="silex-element-content normal">
                         <div style="text-align: center;">
                             <div style="text-align: center;">
@@ -1270,8 +192,7 @@
                     </div>
                 </div>
 
-                <div data-silex-type="text" class="editable-style text-element nav-element silex-id-1518179636443-4 page-home paged-element page-mapping-constellations page-the-paths page-path-of-th-r-se-pierre page-resources" data-silex-id="silex-id-1518179636443-4"
-                    style="" data-silex-href="#!page-the-paths">
+                <div data-silex-type="text" class="editable-style text-element nav-element silex-id-1518179636443-4 page-home paged-element page-mapping-constellations page-the-paths page-path-of-th-r-se-pierre page-resources" data-silex-id="silex-id-1518179636443-4" style="" data-silex-href="#!page-the-paths">
                     <div class="silex-element-content normal">
                         <div style="text-align: center;">
                             <div style="text-align: center;"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">The paths</span></font>
@@ -1280,8 +201,7 @@
                         </div>
                     </div>
                 </div>
-                <div data-silex-type="text" class="editable-style text-element nav-element silex-id-1518179636443-5 page-home paged-element page-mapping-constellations page-the-paths page-path-of-th-r-se-pierre page-resources" data-silex-id="silex-id-1518179636443-5"
-                    style="" data-silex-href="#!page-resources">
+                <div data-silex-type="text" class="editable-style text-element nav-element silex-id-1518179636443-5 page-home paged-element page-mapping-constellations page-the-paths page-path-of-th-r-se-pierre page-resources paged-element-visible page-link-active" data-silex-id="silex-id-1518179636443-5" style="" data-silex-href="#!page-resources">
                     <div class="silex-element-content normal">
                         <div style="text-align: center;">
                             <div style="text-align: center;"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">Resources</span></font>
@@ -1292,8 +212,7 @@
                 </div>
             </div>
             <div data-silex-type="image" class="editable-style silex-id-1514460770879-3 image-element" data-silex-id="silex-id-1514460770879-3" style=""><img src="header.png" class="silex-element-content"></div>
-            <div data-silex-type="text" class="editable-style silex-id-1514460793313-4 text-element page-accueil paged-element page-ressources page-les-parcours page-cartographie-des-constellations page-parcours-de-th-r-se-pierre"
-                data-silex-id="silex-id-1514460793313-4" style="">
+            <div data-silex-type="text" class="editable-style silex-id-1514460793313-4 text-element page-accueil paged-element page-ressources page-les-parcours page-cartographie-des-constellations page-parcours-de-th-r-se-pierre paged-element-hidden" data-silex-id="silex-id-1514460793313-4" style="">
                 <div class="silex-element-content normal"><span style="font-family: georgia, serif;">
                     </span>
                     <h3 class="normal">
@@ -1314,8 +233,7 @@
             </div>
         </div>
         <div data-silex-type="container" class="editable-style silex-id-1518188806706-24 container-element page-accueil paged-element page-home hide-on-mobile" data-silex-id="silex-id-1518188806706-24" style="">
-            <div data-silex-type="text" class="editable-style text-element nav-element silex-id-1518188624516-22 page-accueil paged-element page-home hide-on-mobile page-link-active" data-silex-id="silex-id-1518188624516-22" style="" data-silex-href="#!page-accueil"
-                title="français">
+            <div data-silex-type="text" class="editable-style text-element nav-element silex-id-1518188624516-22 page-accueil paged-element page-home hide-on-mobile paged-element-hidden" data-silex-id="silex-id-1518188624516-22" style="" data-silex-href="#!page-accueil" title="français">
                 <div class="silex-element-content normal">
                     <div style="text-align: center;">
                         <div style="text-align: center;"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">Français</span></font>
@@ -1334,8 +252,8 @@
                 </div>
             </div>
         </div>
-        <div data-silex-type="container" class="editable-style container-element silex-id-1518188937243-25 paged-element page-mapping-constellations page-cartographie-des-constellations hide-on-mobile" data-silex-id="silex-id-1518188937243-25" style="">
-            <div data-silex-type="text" class="editable-style text-element nav-element page-accueil paged-element page-home silex-id-1518188937244-26 page-link-active" data-silex-id="silex-id-1518188937244-26" style="" data-silex-href="#!page-accueil" title="français">
+        <div data-silex-type="container" class="editable-style container-element silex-id-1518188937243-25 paged-element page-mapping-constellations page-cartographie-des-constellations hide-on-mobile paged-element-hidden" data-silex-id="silex-id-1518188937243-25" style="">
+            <div data-silex-type="text" class="editable-style text-element nav-element page-accueil paged-element page-home silex-id-1518188937244-26" data-silex-id="silex-id-1518188937244-26" style="" data-silex-href="#!page-accueil" title="français">
                 <div class="silex-element-content normal">
                     <div style="text-align: center;">
                         <div style="text-align: center;"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">Français</span></font>
@@ -1344,7 +262,7 @@
                     </div>
                 </div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element nav-element page-accueil paged-element page-home silex-id-1518188937245-27" data-silex-id="silex-id-1518188937245-27" style="" data-silex-href="#!page-home" title="english">
+            <div data-silex-type="text" class="editable-style text-element nav-element page-accueil paged-element page-home silex-id-1518188937245-27 paged-element-hidden" data-silex-id="silex-id-1518188937245-27" style="" data-silex-href="#!page-home" title="english">
                 <div class="silex-element-content normal">
                     <div style="text-align: center;">
                         <div style="text-align: center;"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">English</span></font>
@@ -1353,8 +271,7 @@
                     </div>
                 </div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element nav-element silex-id-1518188979070-32 paged-element page-mapping-constellations page-cartographie-des-constellations" data-silex-id="silex-id-1518188979070-32" style="" data-silex-href="#!page-cartographie-des-constellations"
-                title="français">
+            <div data-silex-type="text" class="editable-style text-element nav-element silex-id-1518188979070-32 paged-element page-mapping-constellations page-cartographie-des-constellations" data-silex-id="silex-id-1518188979070-32" style="" data-silex-href="#!page-cartographie-des-constellations" title="français">
                 <div class="silex-element-content normal">
                     <div style="text-align: center;">
                         <div style="text-align: center;"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">Français</span></font>
@@ -1363,8 +280,7 @@
                     </div>
                 </div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element nav-element silex-id-1518188969117-31 page-mapping-constellations paged-element page-cartographie-des-constellations" data-silex-id="silex-id-1518188969117-31" style="" data-silex-href="#!page-mapping-constellations"
-                title="english">
+            <div data-silex-type="text" class="editable-style text-element nav-element silex-id-1518188969117-31 page-mapping-constellations paged-element page-cartographie-des-constellations paged-element-hidden" data-silex-id="silex-id-1518188969117-31" style="" data-silex-href="#!page-mapping-constellations" title="english">
                 <div class="silex-element-content normal">
                     <div style="text-align: center;">
                         <div style="text-align: center;"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">English</span></font>
@@ -1375,7 +291,7 @@
             </div>
         </div>
         <div data-silex-type="container" class="editable-style container-element silex-id-1518189062118-33 paged-element page-the-paths page-les-parcours hide-on-mobile" data-silex-id="silex-id-1518189062118-33" style="">
-            <div data-silex-type="text" class="editable-style text-element nav-element page-accueil paged-element page-home silex-id-1518189062118-34 page-link-active" data-silex-id="silex-id-1518189062118-34" style="" data-silex-href="#!page-accueil" title="français">
+            <div data-silex-type="text" class="editable-style text-element nav-element page-accueil paged-element page-home silex-id-1518189062118-34 paged-element-hidden" data-silex-id="silex-id-1518189062118-34" style="" data-silex-href="#!page-accueil" title="français">
                 <div class="silex-element-content normal">
                     <div style="text-align: center;">
                         <div style="text-align: center;"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">Français</span></font>
@@ -1393,8 +309,7 @@
                     </div>
                 </div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element nav-element paged-element page-mapping-constellations silex-id-1518189062121-36 page-cartographie-des-constellations" data-silex-id="silex-id-1518189062121-36" style="" data-silex-href="#!page-cartographie-des-constellations"
-                title="français">
+            <div data-silex-type="text" class="editable-style text-element nav-element paged-element page-mapping-constellations silex-id-1518189062121-36 page-cartographie-des-constellations paged-element-hidden" data-silex-id="silex-id-1518189062121-36" style="" data-silex-href="#!page-cartographie-des-constellations" title="français">
                 <div class="silex-element-content normal">
                     <div style="text-align: center;">
                         <div style="text-align: center;"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">Français</span></font>
@@ -1403,8 +318,7 @@
                     </div>
                 </div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element nav-element page-mapping-constellations paged-element silex-id-1518189062121-37 page-cartographie-des-constellations" data-silex-id="silex-id-1518189062121-37" style="" data-silex-href="#!page-mapping-constellations"
-                title="english">
+            <div data-silex-type="text" class="editable-style text-element nav-element page-mapping-constellations paged-element silex-id-1518189062121-37 page-cartographie-des-constellations" data-silex-id="silex-id-1518189062121-37" style="" data-silex-href="#!page-mapping-constellations" title="english">
                 <div class="silex-element-content normal">
                     <div style="text-align: center;">
                         <div style="text-align: center;"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">English</span></font>
@@ -1413,8 +327,7 @@
                     </div>
                 </div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element nav-element silex-id-1518189073412-38 paged-element page-the-paths page-les-parcours hide-on-mobile" data-silex-id="silex-id-1518189073412-38" style="" data-silex-href="#!page-les-parcours"
-                title="français">
+            <div data-silex-type="text" class="editable-style text-element nav-element silex-id-1518189073412-38 paged-element page-the-paths page-les-parcours hide-on-mobile paged-element-hidden" data-silex-id="silex-id-1518189073412-38" style="" data-silex-href="#!page-les-parcours" title="français">
                 <div class="silex-element-content normal">
                     <div style="text-align: center;">
                         <div style="text-align: center;"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">Français</span></font>
@@ -1435,8 +348,8 @@
         </div>
 
 
-        <div data-silex-type="container" class="editable-style container-element silex-id-1518189163858-44 paged-element page-parcours-de-th-r-se-pierre page-path-of-th-r-se-pierre hide-on-mobile" data-silex-id="silex-id-1518189163858-44" style="">
-            <div data-silex-type="text" class="editable-style text-element nav-element page-accueil paged-element page-home silex-id-1518189163858-45 page-link-active" data-silex-id="silex-id-1518189163858-45" style="" data-silex-href="#!page-accueil" title="français">
+        <div data-silex-type="container" class="editable-style container-element silex-id-1518189163858-44 paged-element page-parcours-de-th-r-se-pierre page-path-of-th-r-se-pierre hide-on-mobile paged-element-hidden" data-silex-id="silex-id-1518189163858-44" style="">
+            <div data-silex-type="text" class="editable-style text-element nav-element page-accueil paged-element page-home silex-id-1518189163858-45" data-silex-id="silex-id-1518189163858-45" style="" data-silex-href="#!page-accueil" title="français">
                 <div class="silex-element-content normal">
                     <div style="text-align: center;">
                         <div style="text-align: center;"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">Français</span></font>
@@ -1445,7 +358,7 @@
                     </div>
                 </div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element nav-element page-accueil paged-element page-home silex-id-1518189163860-46" data-silex-id="silex-id-1518189163860-46" style="" data-silex-href="#!page-home" title="english">
+            <div data-silex-type="text" class="editable-style text-element nav-element page-accueil paged-element page-home silex-id-1518189163860-46 paged-element-hidden" data-silex-id="silex-id-1518189163860-46" style="" data-silex-href="#!page-home" title="english">
                 <div class="silex-element-content normal">
                     <div style="text-align: center;">
                         <div style="text-align: center;"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">English</span></font>
@@ -1454,8 +367,7 @@
                     </div>
                 </div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element nav-element paged-element page-mapping-constellations silex-id-1518189163860-47 page-cartographie-des-constellations" data-silex-id="silex-id-1518189163860-47" style="" data-silex-href="#!page-cartographie-des-constellations"
-                title="français">
+            <div data-silex-type="text" class="editable-style text-element nav-element paged-element page-mapping-constellations silex-id-1518189163860-47 page-cartographie-des-constellations" data-silex-id="silex-id-1518189163860-47" style="" data-silex-href="#!page-cartographie-des-constellations" title="français">
                 <div class="silex-element-content normal">
                     <div style="text-align: center;">
                         <div style="text-align: center;"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">Français</span></font>
@@ -1464,8 +376,7 @@
                     </div>
                 </div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element nav-element page-mapping-constellations paged-element silex-id-1518189163861-48 page-cartographie-des-constellations" data-silex-id="silex-id-1518189163861-48" style="" data-silex-href="#!page-mapping-constellations"
-                title="english">
+            <div data-silex-type="text" class="editable-style text-element nav-element page-mapping-constellations paged-element silex-id-1518189163861-48 page-cartographie-des-constellations paged-element-hidden" data-silex-id="silex-id-1518189163861-48" style="" data-silex-href="#!page-mapping-constellations" title="english">
                 <div class="silex-element-content normal">
                     <div style="text-align: center;">
                         <div style="text-align: center;"><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);">English</span></font>
@@ -1506,7 +417,7 @@
         </div>
     </div>
 
-    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1478366450713-3 section-element paged-element page-parcours-de-th-r-se-pierre page-path-of-th-r-se-pierre" data-silex-id="silex-id-1478366450713-3" style="">
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1478366450713-3 section-element paged-element page-parcours-de-th-r-se-pierre page-path-of-th-r-se-pierre paged-element-hidden" data-silex-id="silex-id-1478366450713-3" style="">
         <div data-silex-type="container" class="editable-style silex-element-content silex-id-1478366450713-2 silex-container-content container-element prevent-draggable website-width" data-silex-id="silex-id-1478366450713-2" title="therese pierre">
 
 
@@ -1522,10 +433,8 @@
                     </h2><span style="font-family: georgia, serif;">
                 </span></div>
             </div>
-            <div data-silex-type="html" class="editable-style silex-id-1514919105948-15 html-element paged-element page-cartographie-des-constellations" data-silex-id="silex-id-1514919105948-15" style="">
-                <div class="silex-element-content"><iframe https:="" editor.silex.me="" api="" 1.0="" github="" exec="" get="" constellationsbrisees="" master="" constellationsbrisees02.htmlhttps:="" constellationsbrisees03.htmlhttps:="" constellationsbrisees04.htmlhttps:="" constellationsbrisees05.htmlhttps:=""
-                        constellationsbrisees06.htmlhttps:="" constellationsbrisees06.htmlsrc="" data-silex-iframe-src="https://umap.openstreetmap.fr/fr/map/cartographie-des-constellations_188200?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=false&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=null&amp;onLoadPanel=undefined&amp;captionBar=false"
-                        src="" width="100%" height="600px" frameborder="0"></iframe></div>
+            <div data-silex-type="html" class="editable-style silex-id-1514919105948-15 html-element paged-element page-cartographie-des-constellations paged-element-hidden" data-silex-id="silex-id-1514919105948-15" style="">
+                <div class="silex-element-content"><iframe https:="" editor.silex.me="" api="" 1.0="" github="" exec="" get="" constellationsbrisees="" master="" constellationsbrisees02.htmlhttps:="" constellationsbrisees03.htmlhttps:="" constellationsbrisees04.htmlhttps:="" constellationsbrisees05.htmlhttps:="" constellationsbrisees06.htmlhttps:="" constellationsbrisees06.htmlsrc="" data-silex-iframe-src="https://umap.openstreetmap.fr/fr/map/cartographie-des-constellations_188200?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=false&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=null&amp;onLoadPanel=undefined&amp;captionBar=false" src="" width="100%" height="600px" frameborder="0"></iframe></div>
             </div>
             <div data-silex-type="text" class="editable-style silex-id-1514919273824-16 text-element paged-element page-cartographie-des-constellations" data-silex-id="silex-id-1514919273824-16" style="">
                 <div class="silex-element-content normal"><span style="font-family: georgia, serif;">
@@ -1540,17 +449,16 @@
 
 
 
-            <div data-silex-type="text" class="editable-style text-element silex-id-1517409934831-2 paged-element page-path-of-th-r-se-pierre" data-silex-id="silex-id-1517409934831-2" style="">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1517409934831-2 paged-element page-path-of-th-r-se-pierre paged-element-hidden" data-silex-id="silex-id-1517409934831-2" style="">
                 <div class="silex-element-content normal">
                     <h2 class="entry-title"><span style="font-family: georgia, serif;"><span style="color: rgb(255, 255, 255);" class="heading2">Path of Thérèse Pierre</span></span>
                     </h2>
                 </div>
             </div>
             <div data-silex-type="html" class="editable-style silex-id-1517410039883-3 html-element paged-element page-path-of-th-r-se-pierre" data-silex-id="silex-id-1517410039883-3" style="">
-                <div class="silex-element-content"><iframe https:="" editor.silex.me="" api="" 1.0="" github="" exec="" get="" constellationsbrisees="" master="" constellationsbrisees06.htmlhttps:="" constellationsbrisees06.htmlsrc="" data-silex-iframe-src="https://umap.openstreetmap.fr/fr/map/therese-pierre-english_194924?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=false&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=null&amp;onLoadPanel=undefined&amp;captionBar=false"
-                        src="" width="100%" height="600px" frameborder="0"></iframe></div>
+                <div class="silex-element-content"><iframe https:="" editor.silex.me="" api="" 1.0="" github="" exec="" get="" constellationsbrisees="" master="" constellationsbrisees06.htmlhttps:="" constellationsbrisees06.htmlsrc="" data-silex-iframe-src="https://umap.openstreetmap.fr/fr/map/therese-pierre-english_194924?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=false&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=null&amp;onLoadPanel=undefined&amp;captionBar=false" src="" width="100%" height="600px" frameborder="0"></iframe></div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1517410206528-4 paged-element page-path-of-th-r-se-pierre" data-silex-id="silex-id-1517410206528-4" style="">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1517410206528-4 paged-element page-path-of-th-r-se-pierre paged-element-hidden" data-silex-id="silex-id-1517410206528-4" style="">
                 <div class="silex-element-content normal">
                     <p><span style="font-family: georgia, serif;"><font size="3"> For reading comfort, promote <a href="https://umap.openstreetmap.fr/fr/map/therese-pierre-fr_186105#4/51.75/16.70">full screen</a> mode. <br></font></span></p>
                     <p><span style="font-family: georgia, serif;"><font size="3">All images and excerpts are from the documentary, <i>Où sont nos amoureuses</i>, directed by</font></span><span style="font-family: georgia, serif;"><font size="3"> <a href="https://www.filmsdocumentaires.com/auteurs/30-ronbin-hunzinger">Robin Hunzinger</a>, </font></span>
@@ -1567,23 +475,7 @@
 
 
 
-                    <style type="text/css">
-                        p {
-                            margin-bottom: 0.25cm;
-                            direction: ltr;
-                            line-height: 120%;
-                            text-align: justify;
-                        }
-                        
-                        p.western {
-                            font-family: "Garamond", serif;
-                            font-size: 12pt;
-                        }
-                        
-                        p.cjk {
-                            font-size: 12pt;
-                        }
-                    </style>
+                    <style type="text/css">p {margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: justify;}p.western {font-family: "Garamond", serif; font-size: 12pt;}p.cjk {font-size: 12pt;}</style>
 
 
                     <p class="western" style="margin-bottom: 0cm; line-height: 100%" align="center">
@@ -1650,14 +542,7 @@ nos amoureuses</i>&nbsp;»</span></font>
 
 
 
-                        <style type="text/css">
-                                p {
-                                margin-bottom: 0.25cm;
-                                line-height: 120%;
-                            }
-                            
-                            a:link {
-                        </style>
+                        <style type="text/css">p {margin-bottom: 0.25cm; line-height: 120%;}</style>
 
 
                     </p>
@@ -1668,20 +553,17 @@ nos amoureuses</i>&nbsp;»</span></font>
 
                 </div>
             </div>
-            <div data-silex-type="text" class="editable-style silex-id-1514917916769-3 text-element paged-element page-parcours-de-th-r-se-pierre" data-silex-id="silex-id-1514917916769-3" style="">
+            <div data-silex-type="text" class="editable-style silex-id-1514917916769-3 text-element paged-element page-parcours-de-th-r-se-pierre paged-element-hidden" data-silex-id="silex-id-1514917916769-3" style="">
                 <div class="silex-element-content normal">
                     <h2 class="entry-title"><span style="font-family: georgia, serif;"><span style="color: rgb(255, 255, 255);" class="heading2">Parcours de Thérèse Pierre</span></span>
                     </h2>
                 </div>
             </div>
             <div data-silex-type="html" class="editable-style silex-id-1514917300601-1 html-element paged-element page-parcours-de-th-r-se-pierre" data-silex-id="silex-id-1514917300601-1" style="">
-                <div class="silex-element-content"><iframe https:="" editor.silex.me="" api="" 1.0="" github="" exec="" get="" constellationsbrisees="" master="" constellationsbrisees02.htmlhttps:="" constellationsbrisees03.htmlhttps:="" constellationsbrisees04.htmlhttps:="" constellationsbrisees05.htmlhttps:=""
-                        constellationsbrisees06.htmlhttps:="" constellationsbrisees06.htmlsrc="" data-silex-iframe-src="https://umap.openstreetmap.fr/fr/map/therese-pierre_186105?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=false&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=null&amp;onLoadPanel=undefined&amp;captionBar=false"
-                        src="" width="100%" height="600px" frameborder="0"></iframe></div>
+                <div class="silex-element-content"><iframe https:="" editor.silex.me="" api="" 1.0="" github="" exec="" get="" constellationsbrisees="" master="" constellationsbrisees02.htmlhttps:="" constellationsbrisees03.htmlhttps:="" constellationsbrisees04.htmlhttps:="" constellationsbrisees05.htmlhttps:="" constellationsbrisees06.htmlhttps:="" constellationsbrisees06.htmlsrc="" data-silex-iframe-src="https://umap.openstreetmap.fr/fr/map/therese-pierre_186105?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=false&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=null&amp;onLoadPanel=undefined&amp;captionBar=false" src="" width="100%" height="600px" frameborder="0"></iframe></div>
             </div>
-            <div data-silex-type="image" class="editable-style silex-id-1514917636733-2 image-element paged-element page-parcours-de-th-r-se-pierre" data-silex-id="silex-id-1514917636733-2" style=""><img src="parcours_therese_pierre.jpg" class="silex-element-content"></div>
-            <div data-silex-type="text" class="editable-style silex-id-1514918005705-4 text-element paged-element page-parcours-de-th-r-se-pierre" data-silex-id="silex-id-1514918005705-4"
-                style="">
+            <div data-silex-type="image" class="editable-style silex-id-1514917636733-2 image-element paged-element page-parcours-de-th-r-se-pierre paged-element-hidden" data-silex-id="silex-id-1514917636733-2" style=""><img src="parcours_therese_pierre.jpg" class="silex-element-content"></div>
+            <div data-silex-type="text" class="editable-style silex-id-1514918005705-4 text-element paged-element page-parcours-de-th-r-se-pierre" data-silex-id="silex-id-1514918005705-4" style="">
                 <div class="silex-element-content normal">
                     <p>Cartographie interactive, pour un confort de lecture, favorisez le mode <a href="https://umap.openstreetmap.fr/fr/map/cartographie-des-constellations-fr_188200#3/51.56/50.27">plein écran</a>, la navigation se fait en cliquant sur les
                         différents points.</p><span style="font-family: georgia, serif;"><font size="3">
@@ -1691,30 +573,14 @@ nos amoureuses</i>&nbsp;»</span></font>
                     </div>
                 </div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1515755105208-0 paged-element page-parcours-de-th-r-se-pierre" data-silex-id="silex-id-1515755105208-0" style="">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1515755105208-0 paged-element page-parcours-de-th-r-se-pierre paged-element-hidden" data-silex-id="silex-id-1515755105208-0" style="">
                 <div class="silex-element-content normal">
 
 
 
 
 
-                    <style type="text/css">
-                        p {
-                            margin-bottom: 0.25cm;
-                            direction: ltr;
-                            line-height: 120%;
-                            text-align: justify;
-                        }
-                        
-                        p.western {
-                            font-family: "Garamond", serif;
-                            font-size: 12pt;
-                        }
-                        
-                        p.cjk {
-                            font-size: 12pt;
-                        }
-                    </style>
+                    <style type="text/css">p {margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: justify;}p.western {font-family: "Garamond", serif; font-size: 12pt;}p.cjk {font-size: 12pt;}</style>
 
 
                     <p class="western" style="margin-bottom: 0cm; line-height: 100%" align="center">
@@ -1807,7 +673,7 @@ nos amoureuses</i>&nbsp;» de <a href="https://www.filmsdocumentaires.com/auteur
 
 
 
-            <div data-silex-type="text" class="editable-style text-element silex-id-1515756409648-1 page-accueil paged-element" data-silex-id="silex-id-1515756409648-1" style="">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1515756409648-1 page-accueil paged-element paged-element-hidden" data-silex-id="silex-id-1515756409648-1" style="">
                 <div class="silex-element-content normal"><span style="font-family: georgia, serif;">
                     </span>
                     <h2 class="entry-title"><span style="font-family: georgia, serif;"><span style="color: rgb(255, 255, 255);" class="heading2"><span class="heading2">Constellations Brisées</span><br></span>
@@ -1824,24 +690,7 @@ nos amoureuses</i>&nbsp;» de <a href="https://www.filmsdocumentaires.com/auteur
 	
 	</font></span>
                     <p style="text-align: left;">
-                        <style type="text/css">
-                            <span style="font-family: georgia, serif;"><font size="3">p {
-                                margin-bottom: 0.25cm;
-                                direction: ltr;
-                                line-height: 120%;
-                                text-align: left;
-                            }
-                            
-                            a:link {
-                                color: rgb(0, 0, 255);
-                            }
-                            
-                            a.sdfootnoteanc {
-                                font-size: 57%;
-                            }
-                            
-                            </font></span>
-                        </style>
+                        <style type="text/css"><span style="font-family: georgia, serif;"><font size="3">p {margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: left;}a:link {color: rgb(0, 0, 255);}a.sdfootnoteanc {font-size: 57%;}</style>
                     </p>
                     <div style="text-align: left;"><span style="font-family: georgia, serif;"><font size="3">
 
@@ -2071,7 +920,7 @@ contact@queercode.net</font></span></p>
 
                 </div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1517409754083-1 page-the-paths paged-element" data-silex-id="silex-id-1517409754083-1" style="">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1517409754083-1 page-the-paths paged-element paged-element-hidden" data-silex-id="silex-id-1517409754083-1" style="">
                 <div class="silex-element-content normal"><span style="font-family: georgia, serif;">
                     </span>
                     <h2 class="entry-title"><span style="font-family: georgia, serif;"><span style="color: rgb(255, 255, 255);" class="heading2">The paths<br></span></span>
@@ -2079,7 +928,7 @@ contact@queercode.net</font></span></p>
                 </span></div>
             </div>
             <div data-silex-type="image" class="editable-style image-element parcours-img silex-id-1518180230311-8 page-the-paths paged-element" data-silex-id="silex-id-1518180230311-8" style="" data-silex-href="#!page-path-of-th-r-se-pierre"><img src="therese_pierre_parcours.png" class="silex-element-content"></div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1514918669172-11 paged-element page-les-parcours" data-silex-id="silex-id-1514918669172-11" style="">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1514918669172-11 paged-element page-les-parcours paged-element-hidden" data-silex-id="silex-id-1514918669172-11" style="">
                 <div class="silex-element-content normal"><span style="font-family: georgia, serif;">
                     </span>
                     <h2 class="entry-title"><span style="font-family: georgia, serif;"><span style="color: rgb(255, 255, 255);" class="heading2">Les parcours<br></span></span>
@@ -2099,7 +948,7 @@ contact@queercode.net</font></span></p>
     <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1514918474297-8 section-element page-ressources paged-element page-resources" data-silex-id="silex-id-1514918474297-8">
         <div data-silex-type="container" class="editable-style silex-id-1514918474296-7 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1514918474296-7" title="ressources">
 
-            <div data-silex-type="text" class="editable-style text-element silex-id-1515078124640-6 page-ressources paged-element" data-silex-id="silex-id-1515078124640-6" style="">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1515078124640-6 page-ressources paged-element paged-element-hidden" data-silex-id="silex-id-1515078124640-6" style="">
                 <div class="silex-element-content normal"><span style="font-family: georgia, serif;">
                     </span>
                     <h2 class="entry-title"><span style="font-family: georgia, serif;"><span style="color: rgb(255, 255, 255);" class="heading2">Ressources<br></span></span>
@@ -2152,7 +1001,7 @@ contact@queercode.net</font></span></p>
 
 
 
-            <div data-silex-type="text" class="editable-style text-element silex-id-1518186205808-9 page-ressources paged-element" data-silex-id="silex-id-1518186205808-9" style="">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1518186205808-9 page-ressources paged-element paged-element-hidden" data-silex-id="silex-id-1518186205808-9" style="">
                 <div class="silex-element-content normal">
                     <p>
 
@@ -2195,7 +1044,7 @@ contact@queercode.net</font></span></p>
 
 </font></span></div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1518187045301-10 page-resources paged-element" data-silex-id="silex-id-1518187045301-10" style="">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1518187045301-10 page-resources paged-element paged-element-visible" data-silex-id="silex-id-1518187045301-10" style="">
                 <div class="silex-element-content normal"><span style="font-family: georgia, serif;">
                     </span>
                     <h2 class="entry-title"><span style="font-family: georgia, serif;"><span style="color: rgb(255, 255, 255);" class="heading2">Resources<br></span></span>
@@ -2245,7 +1094,7 @@ contact@queercode.net</font></span></p>
 
 </font></span></div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1518187045327-11 page-resources paged-element" data-silex-id="silex-id-1518187045327-11" style="">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1518187045327-11 page-resources paged-element paged-element-visible" data-silex-id="silex-id-1518187045327-11" style="">
                 <div class="silex-element-content normal">
                     <p>
 
@@ -2293,32 +1142,13 @@ contact@queercode.net</font></span></p>
 
 
 
-                        <style type="text/css">
-                            <span style="font-family: georgia, serif;">&lt;
+                        <style type="text/css"><span style="font-family: georgia, serif;">&lt;
                             font size="3"&gt;
                             &amp;
                             lt;
                             font size="3"&amp;
                             gt;
-                            p {
-                                margin-bottom: 0.25cm;
-                                direction: ltr;
-                                line-height: 120%;
-                                text-align: left;
-                            }
-                            
-                            a:link {
-                                color: rgb(0, 0, 255);
-                            }
-                            
-                            &amp;
-                            lt;
-                            /font&amp;
-                            gt;
-                            &lt;
-                            /font&gt;
-                            </span>
-                        </style>
+                            p {margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: left;}a:link {color: rgb(0, 0, 255);}</style>
 
 
                     </p><span style="font-family: georgia, serif;"><b><font size="4">Références culturelles et artistiques</font></b></span>
@@ -2379,7 +1209,7 @@ contact@queercode.net</font></span></p>
 </font></span></div>
             </div>
 
-            <div data-silex-type="text" class="editable-style text-element silex-id-1518187045351-15 page-resources paged-element" data-silex-id="silex-id-1518187045351-15" style="">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1518187045351-15 page-resources paged-element paged-element-visible" data-silex-id="silex-id-1518187045351-15" style="">
                 <div class="silex-element-content normal">
                     <p>
 
@@ -2387,32 +1217,13 @@ contact@queercode.net</font></span></p>
 
 
 
-                        <style type="text/css">
-                            <span style="font-family: georgia, serif;">&lt;
+                        <style type="text/css"><span style="font-family: georgia, serif;">&lt;
                             font size="3"&gt;
                             &amp;
                             lt;
                             font size="3"&amp;
                             gt;
-                            p {
-                                margin-bottom: 0.25cm;
-                                direction: ltr;
-                                line-height: 120%;
-                                text-align: left;
-                            }
-                            
-                            a:link {
-                                color: rgb(0, 0, 255);
-                            }
-                            
-                            &amp;
-                            lt;
-                            /font&amp;
-                            gt;
-                            &lt;
-                            /font&gt;
-                            </span>
-                        </style>
+                            p {margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: left;}a:link {color: rgb(0, 0, 255);}</style>
 
 
                     </p>
@@ -2422,20 +1233,7 @@ contact@queercode.net</font></span></p>
 
 
 
-                        <style type="text/css">
-                            <span style="font-family: georgia, serif;">p {
-                                margin-bottom: 0.25cm;
-                                direction: ltr;
-                                line-height: 120%;
-                                text-align: left;
-                            }
-                            
-                            a:link {
-                                color: rgb(0, 0, 255);
-                            }
-                            
-                            </span>
-                        </style>
+                        <style type="text/css"><span style="font-family: georgia, serif;">p {margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: left;}a:link {color: rgb(0, 0, 255);}</style>
 
 
                     </p><span style="font-family: georgia, serif;"><b><font size="4"><span id="result_box" class="" lang="en"><span class="">Digital Cartographies of the Second World War</span></span>
@@ -2450,24 +1248,9 @@ contact@queercode.net</font></span></p>
                     </font>
                     </span>
                     <p>
-                        <style type="text/css">
-                            <span style="font-family: georgia, serif;">&lt;
+                        <style type="text/css"><span style="font-family: georgia, serif;">&lt;
                             font size="3"&gt;
-                            p {
-                                margin-bottom: 0.25cm;
-                                direction: ltr;
-                                line-height: 120%;
-                                text-align: left;
-                            }
-                            
-                            a:link {
-                                color: rgb(0, 0, 255);
-                            }
-                            
-                            &lt;
-                            /font&gt;
-                            </span>
-                        </style>
+                            p {margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: left;}a:link {color: rgb(0, 0, 255);}</style>
                     </p>
                     <ul>
                         <li>
@@ -2509,32 +1292,13 @@ Carte intitulée: <a href="http://tetrade.huma-num.fr/Tetrademap_Enfant_Paris/">
 
 
 
-                        <style type="text/css">
-                            <span style="font-family: georgia, serif;">&lt;
+                        <style type="text/css"><span style="font-family: georgia, serif;">&lt;
                             font size="3"&gt;
                             &amp;
                             lt;
                             font size="3"&amp;
                             gt;
-                            p {
-                                margin-bottom: 0.25cm;
-                                direction: ltr;
-                                line-height: 120%;
-                                text-align: left;
-                            }
-                            
-                            a:link {
-                                color: rgb(0, 0, 255);
-                            }
-                            
-                            &amp;
-                            lt;
-                            /font&amp;
-                            gt;
-                            &lt;
-                            /font&gt;
-                            </span>
-                        </style>
+                            p {margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: left;}a:link {color: rgb(0, 0, 255);}</style>
 
 
                     </p>
@@ -2544,20 +1308,7 @@ Carte intitulée: <a href="http://tetrade.huma-num.fr/Tetrademap_Enfant_Paris/">
 
 
 
-                        <style type="text/css">
-                            <span style="font-family: georgia, serif;">p {
-                                margin-bottom: 0.25cm;
-                                direction: ltr;
-                                line-height: 120%;
-                                text-align: left;
-                            }
-                            
-                            a:link {
-                                color: rgb(0, 0, 255);
-                            }
-                            
-                            </span>
-                        </style>
+                        <style type="text/css"><span style="font-family: georgia, serif;">p {margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: left;}a:link {color: rgb(0, 0, 255);}</style>
 
 
                     </p><span style="font-family: georgia, serif;"><b><font size="4"><span id="result_box" class="" lang="en"><span class="">Cartographic works related to the Second World War</span></span>
@@ -2566,20 +1317,7 @@ Carte intitulée: <a href="http://tetrade.huma-num.fr/Tetrademap_Enfant_Paris/">
                     </span>
                     <ul>
                         <li>
-                            <style type="text/css">
-                                <span style="font-family: georgia, serif;">p {
-                                    margin-bottom: 0.25cm;
-                                    direction: ltr;
-                                    line-height: 120%;
-                                    text-align: left;
-                                }
-                                
-                                a:link {
-                                    color: rgb(0, 0, 255);
-                                }
-                                
-                                </span>
-                            </style>
+                            <style type="text/css"><span style="font-family: georgia, serif;">p {margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: left;}a:link {color: rgb(0, 0, 255);}</style>
                             <font size="3"><span style="font-family: georgia, serif;"><i>Atlas de
 	la libération de la France 6 juin 1944- 8 mai 1945. Des
 	débarquements aux villes libérées</i>&nbsp;de Stéphane Simonnet
@@ -2608,32 +1346,13 @@ Carte intitulée: <a href="http://tetrade.huma-num.fr/Tetrademap_Enfant_Paris/">
 
 
 
-                        <style type="text/css">
-                            <span style="font-family: georgia, serif;">&lt;
+                        <style type="text/css"><span style="font-family: georgia, serif;">&lt;
                             font size="3"&gt;
                             &amp;
                             lt;
                             font size="3"&amp;
                             gt;
-                            p {
-                                margin-bottom: 0.25cm;
-                                direction: ltr;
-                                line-height: 120%;
-                                text-align: left;
-                            }
-                            
-                            a:link {
-                                color: rgb(0, 0, 255);
-                            }
-                            
-                            &amp;
-                            lt;
-                            /font&amp;
-                            gt;
-                            &lt;
-                            /font&gt;
-                            </span>
-                        </style>
+                            p {margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: left;}a:link {color: rgb(0, 0, 255);}</style>
 
 
                     </p>
@@ -2643,20 +1362,7 @@ Carte intitulée: <a href="http://tetrade.huma-num.fr/Tetrademap_Enfant_Paris/">
 
 
 
-                        <style type="text/css">
-                            <span style="font-family: georgia, serif;">p {
-                                margin-bottom: 0.25cm;
-                                direction: ltr;
-                                line-height: 120%;
-                                text-align: left;
-                            }
-                            
-                            a:link {
-                                color: rgb(0, 0, 255);
-                            }
-                            
-                            </span>
-                        </style>
+                        <style type="text/css"><span style="font-family: georgia, serif;">p {margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: left;}a:link {color: rgb(0, 0, 255);}</style>
 
 
                     </p><span style="font-family: georgia, serif;"><b><font size="4">Cartographies
@@ -2668,24 +1374,9 @@ numériques consacrées à la Seconde Guerre Mondiale</font></b></span><br><span
 	
 	</font></span>
                     <p>
-                        <style type="text/css">
-                            <span style="font-family: georgia, serif;">&lt;
+                        <style type="text/css"><span style="font-family: georgia, serif;">&lt;
                             font size="3"&gt;
-                            p {
-                                margin-bottom: 0.25cm;
-                                direction: ltr;
-                                line-height: 120%;
-                                text-align: left;
-                            }
-                            
-                            a:link {
-                                color: rgb(0, 0, 255);
-                            }
-                            
-                            &lt;
-                            /font&gt;
-                            </span>
-                        </style>
+                            p {margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: left;}a:link {color: rgb(0, 0, 255);}</style>
                     </p>
                     <ul>
                         <li>
@@ -2720,7 +1411,7 @@ Carte intitulée: <a href="http://tetrade.huma-num.fr/Tetrademap_Enfant_Paris/">
 </font></span></div>
             </div>
             <div data-silex-type="container" class="editable-style silex-id-1520506896862-0 container-element hide-on-mobile" data-silex-id="silex-id-1520506896862-0" style=""></div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1515078124671-7 page-ressources paged-element" data-silex-id="silex-id-1515078124671-7" style="">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1515078124671-7 page-ressources paged-element paged-element-hidden" data-silex-id="silex-id-1515078124671-7" style="">
                 <div class="silex-element-content normal">
                     <p>
 
@@ -2728,32 +1419,13 @@ Carte intitulée: <a href="http://tetrade.huma-num.fr/Tetrademap_Enfant_Paris/">
 
 
 
-                        <style type="text/css">
-                            <span style="font-family: georgia, serif;">&lt;
+                        <style type="text/css"><span style="font-family: georgia, serif;">&lt;
                             font size="3"&gt;
                             &amp;
                             lt;
                             font size="3"&amp;
                             gt;
-                            p {
-                                margin-bottom: 0.25cm;
-                                direction: ltr;
-                                line-height: 120%;
-                                text-align: left;
-                            }
-                            
-                            a:link {
-                                color: rgb(0, 0, 255);
-                            }
-                            
-                            &amp;
-                            lt;
-                            /font&amp;
-                            gt;
-                            &lt;
-                            /font&gt;
-                            </span>
-                        </style>
+                            p {margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: left;}a:link {color: rgb(0, 0, 255);}</style>
 
 
                     </p><span style="font-family: georgia, serif;"><b><font size="4">Références culturelles et artistiques</font></b></span>
@@ -2840,18 +1512,7 @@ Carte intitulée: <a href="http://tetrade.huma-num.fr/Tetrademap_Enfant_Paris/">
 
 
 
-                    <style type="text/css">
-                        p {
-                            margin-bottom: 0.25cm;
-                            direction: ltr;
-                            line-height: 120%;
-                            text-align: left;
-                        }
-                        
-                        a:link {
-                            color: rgb(0, 0, 255);
-                        }
-                    </style>
+                    <style type="text/css">p {margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: left;}a:link {color: rgb(0, 0, 255);}</style>
 
 
                     <ul>
@@ -2859,11 +1520,17 @@ Carte intitulée: <a href="http://tetrade.huma-num.fr/Tetrademap_Enfant_Paris/">
                         </li>
                     </ul>
                     <ul>
-                        <li>Une cartographie&nbsp;numérique
-                            <a href="http://umap.openstreetmap.fr/fr/map/carte-de-ressources-feministes-et-lgbti_176637#12/48.1130/-1.5910">des lieux d'intérêt pour les femmes et/ou les LGB/T/I de Rennes</a>. <br>Pour contacter les créatrices: cartographie-femmes-et-lgbti@riseup.net</li>
-                    </ul>
-                    <ul>
-                        <li>Cartographie du Collectif lesbien lyonnais, <a href="https://umap.openstreetmap.fr/fr/map/memoire-lesbienne-et-feministe_123371#18/45.76978/4.83436">mémoire lesbienne et féministe</a>.<br>Pour les contacter par <a href="https://www.facebook.com/LyonC2L/">facebook</a><br>Et
+                        <li><div class="accordion-content">
+        <article class="markdown">
+            <p>Cartographie numérique des lieux d'intérêt pour les femmes et/ou les LGB/T/I de Rennes.<br>Née du constat qu’il manquait un outil répertoriant les adresses 
+utiles à connaître pour les femmes et/ou LGB/T/I rennais-es, cette carte
+ a plusieurs buts : favoriser la connaissance du réseau associatif et 
+militant rennais LGB/T/I (lesbiennes, gays, bi-e-s et/ou trans et/ou 
+intersexes) et féministe, recenser les centres de soin et de prévention 
+affective et sexuelle, permettre aux femmes de connaître les lieux 
+susceptibles de faire valoir leurs droits (en matière de logement, 
+famille, couple…) ainsi que présenter les lieux de convivialité à 
+destination de ces publics.<br>Plus d’infos sur le site : <a href="https://cartographiefemmesetlgbti.wordpress.com/">https://cartographiefemmesetlgbti.wordpress.com/</a> <br>Pour contacter les créatrices :<br>cartographie-femmes-et-lgbti@riseup.net</p></article></div></li></ul><ul><li>Cartographie du Collectif lesbien lyonnais, <a href="https://umap.openstreetmap.fr/fr/map/memoire-lesbienne-et-feministe_123371#18/45.76978/4.83436">mémoire lesbienne et féministe</a>.<br>Pour les contacter par <a href="https://www.facebook.com/LyonC2L/">facebook</a><br>Et
                             leur site: <a href="http://collectif-l.blogspot.fr/">collectif-l.blogspot.fr</a>
 
                         </li>
@@ -2873,7 +1540,7 @@ Carte intitulée: <a href="http://tetrade.huma-num.fr/Tetrademap_Enfant_Paris/">
 
 </font></span></div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1515078124679-8 page-ressources paged-element" data-silex-id="silex-id-1515078124679-8" style="">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1515078124679-8 page-ressources paged-element paged-element-hidden" data-silex-id="silex-id-1515078124679-8" style="">
                 <div class="silex-element-content normal">
                     <p>
 
@@ -2881,32 +1548,13 @@ Carte intitulée: <a href="http://tetrade.huma-num.fr/Tetrademap_Enfant_Paris/">
 
 
 
-                        <style type="text/css">
-                            <span style="font-family: georgia, serif;">&lt;
+                        <style type="text/css"><span style="font-family: georgia, serif;">&lt;
                             font size="3"&gt;
                             &amp;
                             lt;
                             font size="3"&amp;
                             gt;
-                            p {
-                                margin-bottom: 0.25cm;
-                                direction: ltr;
-                                line-height: 120%;
-                                text-align: left;
-                            }
-                            
-                            a:link {
-                                color: rgb(0, 0, 255);
-                            }
-                            
-                            &amp;
-                            lt;
-                            /font&amp;
-                            gt;
-                            &lt;
-                            /font&gt;
-                            </span>
-                        </style>
+                            p {margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: left;}a:link {color: rgb(0, 0, 255);}</style>
 
 
                     </p>
@@ -2916,40 +1564,14 @@ Carte intitulée: <a href="http://tetrade.huma-num.fr/Tetrademap_Enfant_Paris/">
 
 
 
-                        <style type="text/css">
-                            <span style="font-family: georgia, serif;">p {
-                                margin-bottom: 0.25cm;
-                                direction: ltr;
-                                line-height: 120%;
-                                text-align: left;
-                            }
-                            
-                            a:link {
-                                color: rgb(0, 0, 255);
-                            }
-                            
-                            </span>
-                        </style>
+                        <style type="text/css"><span style="font-family: georgia, serif;">p {margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: left;}a:link {color: rgb(0, 0, 255);}</style>
 
 
                     </p><span style="font-family: georgia, serif;"><b><font size="4">Ouvrages
 cartographiques liés à la Seconde Guerre Mondiale</font></b></span>
                     <ul>
                         <li>
-                            <style type="text/css">
-                                <span style="font-family: georgia, serif;">p {
-                                    margin-bottom: 0.25cm;
-                                    direction: ltr;
-                                    line-height: 120%;
-                                    text-align: left;
-                                }
-                                
-                                a:link {
-                                    color: rgb(0, 0, 255);
-                                }
-                                
-                                </span>
-                            </style>
+                            <style type="text/css"><span style="font-family: georgia, serif;">p {margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: left;}a:link {color: rgb(0, 0, 255);}</style>
                             <font size="3"><span style="font-family: georgia, serif;"><i>Atlas de
 	la libération de la France 6 juin 1944- 8 mai 1945. Des
 	débarquements aux villes libérées</i>&nbsp;de Stéphane Simonnet
@@ -2972,7 +1594,8 @@ cartographiques liés à la Seconde Guerre Mondiale</font></b></span>
             </div>
             <div data-silex-type="container" class="editable-style container-element silex-id-1520507365215-2 hide-on-mobile" data-silex-id="silex-id-1520507365215-2" style=""></div>
 
-            <div data-silex-type="text" class="editable-style text-element silex-id-1518187045338-13" data-silex-id="silex-id-1518187045338-13" style="">
+            
+        <div data-silex-type="text" class="editable-style text-element silex-id-1518187045338-13 page-resources paged-element paged-element-visible" data-silex-id="silex-id-1518187045338-13" style="">
                 <div class="silex-element-content normal">
                     <p>
 
@@ -3000,18 +1623,7 @@ cartographiques liés à la Seconde Guerre Mondiale</font></b></span>
 
 
 
-                    <style type="text/css">
-                        p {
-                            margin-bottom: 0.25cm;
-                            direction: ltr;
-                            line-height: 120%;
-                            text-align: left;
-                        }
-                        
-                        a:link {
-                            color: rgb(0, 0, 255);
-                        }
-                    </style>
+                    <style type="text/css">p {margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: left;}a:link {color: rgb(0, 0, 255);}</style>
 
 
                     <ul>
@@ -3019,8 +1631,15 @@ cartographiques liés à la Seconde Guerre Mondiale</font></b></span>
                         </li>
                     </ul>
                     <ul>
-                        <li>Une cartographie&nbsp;numérique
-                            <a href="http://umap.openstreetmap.fr/fr/map/carte-de-ressources-feministes-et-lgbti_176637#12/48.1130/-1.5910">des lieux d'intérêt pour les femmes et/ou les LGB/T/I de Rennes</a>. <br>Pour contacter les créatrices: cartographie-femmes-et-lgbti@riseup.net</li>
+                        <li>Cartographie numérique des lieux d'intérêt pour les femmes et/ou les LGB/T/I de Rennes.<br>Née du constat qu’il manquait un outil répertoriant les adresses 
+utiles à connaître pour les femmes et/ou LGB/T/I rennais-es, cette carte
+ a plusieurs buts : favoriser la connaissance du réseau associatif et 
+militant rennais LGB/T/I (lesbiennes, gays, bi-e-s et/ou trans et/ou 
+intersexes) et féministe, recenser les centres de soin et de prévention 
+affective et sexuelle, permettre aux femmes de connaître les lieux 
+susceptibles de faire valoir leurs droits (en matière de logement, 
+famille, couple…) ainsi que présenter les lieux de convivialité à 
+destination de ces publics.<br>Plus d’infos sur le site : <a href="https://cartographiefemmesetlgbti.wordpress.com/">https://cartographiefemmesetlgbti.wordpress.com/</a> <br>Pour contacter les créatrices :<br>cartographie-femmes-et-lgbti@riseup.net</li>
                     </ul>
                     <ul>
                         <li>Cartographie du Collectif lesbien lyonnais, <a href="https://umap.openstreetmap.fr/fr/map/memoire-lesbienne-et-feministe_123371#18/45.76978/4.83436">mémoire lesbienne et féministe</a>.<br>Pour les contacter par <a href="https://www.facebook.com/LyonC2L/">facebook</a><br>Et
@@ -3032,8 +1651,7 @@ cartographiques liés à la Seconde Guerre Mondiale</font></b></span>
                     </p><span style="font-family: georgia, serif;"><font size="3">
 
 </font></span></div>
-            </div>
-        </div>
+            </div></div>
     </div>
 
 
@@ -3046,7 +1664,7 @@ cartographiques liés à la Seconde Guerre Mondiale</font></b></span>
 
 
 
-            <div data-silex-type="text" class="editable-style text-element silex-id-1517393494822-5 page-home paged-element" data-silex-id="silex-id-1517393494822-5" style="">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1517393494822-5 page-home paged-element paged-element-hidden" data-silex-id="silex-id-1517393494822-5" style="">
                 <div class="silex-element-content normal"><span style="font-family: georgia, serif;">
                     </span>
                     <h2 class="entry-title"><span style="font-family: georgia, serif;"><span style="color: rgb(255, 255, 255);" class="heading2"><span class="heading2">Broken Constellations</span><br></span>
@@ -3063,29 +1681,15 @@ cartographiques liés à la Seconde Guerre Mondiale</font></b></span>
                     </h2><span style="font-family: georgia, serif;">
                 </span></div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1515761692415-11 page-accueil paged-element" data-silex-id="silex-id-1515761692415-11" style="">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1515761692415-11 page-accueil paged-element paged-element-hidden" data-silex-id="silex-id-1515761692415-11" style="">
                 <div class="silex-element-content normal">
 
 
 
 
 
-                    <style type="text/css">
-                        p {
-                            margin-bottom: 0.25cm;
-                            line-height: 120%;
-                        }
-                        
-                        a:link
-                    </style>
-                    <style type="text/css">
-                        p {
-                            margin-bottom: 0.25cm;
-                            line-height: 120%;
-                        }
-                        
-                        a:lin
-                    </style>&nbsp; &nbsp; &nbsp;Un projet participatif européen, numérique et féministe de <a href="http://www.queercode.net/">Queer Code</a>.<br>
+                    <style type="text/css">p {margin-bottom: 0.25cm; line-height: 120%;}</style>
+                    <style type="text/css">p {margin-bottom: 0.25cm; line-height: 120%;}</style>&nbsp; &nbsp; &nbsp;Un projet participatif européen, numérique et féministe de <a href="http://www.queercode.net/">Queer Code</a>.<br>
 
                     <br>&nbsp; &nbsp; Afin de faire connaître les parcours de vie de femmes déportées et persécutées qui ont aimé des femmes, quelles que soient leurs nationalités, quels que soient les statuts de déportées que le régime nazi leur ont
                     attribués, nous proposons un projet global alliant numérique, installations artistiques participatives, recherches historiques et féministes collaboratives.<br>
@@ -3116,30 +1720,9 @@ cartographiques liés à la Seconde Guerre Mondiale</font></b></span>
 
 
 
-                    <style type="text/css">
-                        p {
-                            margin-bottom: 0.25cm;
-                            line-height: 120%;
-                        }
-                        
-                        a:link
-                    </style>
-                    <style type="text/css">
-                        p {
-                            margin-bottom: 0.25cm;
-                            line-height: 120%;
-                        }
-                        
-                        a:lin
-                    </style>
-                    <style type="text/css">
-                        p {
-                            margin-bottom: 0.25cm;
-                            line-height: 120%;
-                        }
-                        
-                        a:link {}
-                    </style>
+                    <style type="text/css">p {margin-bottom: 0.25cm; line-height: 120%;}</style>
+                    <style type="text/css">p {margin-bottom: 0.25cm; line-height: 120%;}</style>
+                    <style type="text/css">p {margin-bottom: 0.25cm; line-height: 120%;}a:link {}</style>
 
 
                     &nbsp; &nbsp; &nbsp;A participative, digital and feminist European project of <a href="http://www.queercode.net/">Queer Code</a>.<br>
@@ -3168,7 +1751,7 @@ cartographiques liés à la Seconde Guerre Mondiale</font></b></span>
     </div>
 
 
-    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1515761331185-5 section-element paged-element page-mapping-constellations page-cartographie-des-constellations" data-silex-id="silex-id-1515761331185-5">
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1515761331185-5 section-element paged-element page-mapping-constellations page-cartographie-des-constellations paged-element-hidden" data-silex-id="silex-id-1515761331185-5">
         <div data-silex-type="container" class="editable-style silex-id-1515761331184-4 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1515761331184-4" title="cartographie constellations">
 
 
@@ -3182,7 +1765,7 @@ cartographiques liés à la Seconde Guerre Mondiale</font></b></span>
             </div>
 
 
-            <div data-silex-type="text" class="editable-style text-element silex-id-1517408129245-0 page-mapping-constellations paged-element" data-silex-id="silex-id-1517408129245-0" style="">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1517408129245-0 page-mapping-constellations paged-element paged-element-hidden" data-silex-id="silex-id-1517408129245-0" style="">
                 <div class="silex-element-content normal"><span style="font-family: georgia, serif;">
                     </span>
                     <h2 class="entry-title"><span style="font-family: georgia, serif;"><span style="color: rgb(255, 255, 255);" class="heading2"><span class="heading2">Mapping Constellations</span><br></span>
@@ -3191,9 +1774,7 @@ cartographiques liés à la Seconde Guerre Mondiale</font></b></span>
                 </span></div>
             </div>
             <div data-silex-type="html" class="editable-style html-element silex-id-1515761811608-13" data-silex-id="silex-id-1515761811608-13" style="">
-                <div class="silex-element-content"><iframe https:="" editor.silex.me="" api="" 1.0="" github="" exec="" get="" constellationsbrisees="" master="" constellationsbrisees02.htmlhttps:="" constellationsbrisees03.htmlhttps:="" constellationsbrisees04.htmlhttps:="" constellationsbrisees05.htmlhttps:=""
-                        constellationsbrisees06.htmlhttps:="" constellationsbrisees06.htmlsrc="" data-silex-iframe-src="https://umap.openstreetmap.fr/fr/map/cartographie-des-constellations_188200?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=false&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=null&amp;onLoadPanel=undefined&amp;captionBar=false"
-                        src="" width="100%" height="600px" frameborder="0"></iframe></div>
+                <div class="silex-element-content"><iframe https:="" editor.silex.me="" api="" 1.0="" github="" exec="" get="" constellationsbrisees="" master="" constellationsbrisees02.htmlhttps:="" constellationsbrisees03.htmlhttps:="" constellationsbrisees04.htmlhttps:="" constellationsbrisees05.htmlhttps:="" constellationsbrisees06.htmlhttps:="" constellationsbrisees06.htmlsrc="" data-silex-iframe-src="https://umap.openstreetmap.fr/fr/map/cartographie-des-constellations_188200?scaleControl=false&amp;miniMap=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;allowEdit=false&amp;moreControl=false&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=null&amp;onLoadPanel=undefined&amp;captionBar=false" src="" width="100%" height="600px" frameborder="0"></iframe></div>
             </div>
             <div data-silex-type="text" class="editable-style text-element silex-id-1515761811618-14 page-mapping-constellations paged-element" data-silex-id="silex-id-1515761811618-14" style="">
                 <div class="silex-element-content normal"><span style="font-family: georgia, serif;">
@@ -3204,7 +1785,7 @@ cartographiques liés à la Seconde Guerre Mondiale</font></b></span>
 	
 	
 	
-	<style type="text/css">p { margin-bottom: 0.25cm; line-height: 120%; }a:link { }</style>
+	<style type="text/css">p {margin-bottom: 0.25cm; line-height: 120%;}a:link {}</style>
 
 
 </span></span>
@@ -3220,7 +1801,7 @@ cartographiques liés à la Seconde Guerre Mondiale</font></b></span>
                 </span></p>
                 </div>
             </div>
-            <div data-silex-type="text" class="editable-style text-element silex-id-1517407809488-8 paged-element page-cartographie-des-constellations" data-silex-id="silex-id-1517407809488-8" style="">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1517407809488-8 paged-element page-cartographie-des-constellations paged-element-hidden" data-silex-id="silex-id-1517407809488-8" style="">
                 <div class="silex-element-content normal"><span style="font-family: georgia, serif;">
                     </span>
                     <p><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(255, 255, 255);"><span>
@@ -3229,7 +1810,7 @@ cartographiques liés à la Seconde Guerre Mondiale</font></b></span>
 	
 	
 	
-	<style type="text/css">p { margin-bottom: 0.25cm; line-height: 120%; }a:link { }</style>
+	<style type="text/css">p {margin-bottom: 0.25cm; line-height: 120%;}a:link {}</style>
 
 
 </span></span>
@@ -3243,28 +1824,14 @@ cartographiques liés à la Seconde Guerre Mondiale</font></b></span>
 
 
 
-                            <style type="text/css">
-                                p {
-                                    margin-bottom: 0.25cm;
-                                    line-height: 120%;
-                                }
-                                
-                                a:link {}
-                            </style>
+                            <style type="text/css">p {margin-bottom: 0.25cm; line-height: 120%;}a:link {}</style>
                         </font>
 
 
 
 
 
-                        <style type="text/css">
-                            p {
-                                margin-bottom: 0.25cm;
-                                line-height: 120%;
-                            }
-                            
-                            a:link {}
-                        </style>
+                        <style type="text/css">p {margin-bottom: 0.25cm; line-height: 120%;}a:link {}</style>
 
 
                     </p>
@@ -3286,8 +1853,7 @@ cartographiques liés à la Seconde Guerre Mondiale</font></b></span>
     </div>
     <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1515761641046-9 section-element" data-silex-id="silex-id-1515761641046-9">
         <div data-silex-type="container" class="editable-style silex-id-1515761641046-8 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1515761641046-8">
-            <div data-silex-id="silex-id-1442914737143-3" class="editable-style silex-id-1442914737143-3 text-element page-accueil paged-element page-ressources page-les-parcours page-cartographie-des-constellations page-parcours-de-th-r-se-pierre" data-silex-type="text"
-                style="">
+            <div data-silex-id="silex-id-1442914737143-3" class="editable-style silex-id-1442914737143-3 text-element page-accueil paged-element page-ressources page-les-parcours page-cartographie-des-constellations page-parcours-de-th-r-se-pierre" data-silex-type="text" style="">
                 <div class="silex-element-content normal"><span style="font-family: georgia, serif;"><font size="3">
                     <span style="color: rgb(255, 255, 255);">
                     2017 - Constellations Brisées un projet de </span><span style="color: rgb(142, 124, 195);"><a href="//www.queercode.net/">Queer Code</a></span>
@@ -3306,7 +1872,7 @@ cartographiques liés à la Seconde Guerre Mondiale</font></b></span>
 	
 	
 	
-	<style type="text/css">p { margin-bottom: 0.25cm; line-height: 120%; }a:link { <font face="Georgia, arial">B</font></style></span></font>
+	<style type="text/css">p {margin-bottom: 0.25cm; line-height: 120%;}</style></span></font>
                     </span><span style="font-family: georgia, serif;"><font size="3"><span style="color: rgb(142, 124, 195);"></span>
 
                     </font>
@@ -3332,6 +1898,6 @@ cartographiques liés à la Seconde Guerre Mondiale</font></b></span>
 
 
 
-</body>
 
-</html>
+
+</body></html>
